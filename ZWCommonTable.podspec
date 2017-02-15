@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 	s.platform	= :ios,'7.0'
 	s.ios.deployment_target = '7.0'
 	s.source	= {:git => 'https://github.com/wangziwu/ZWCommonTableDemo.git',:tag => s.version}
-	s.source.files	= 'ZWCommonTable/*.{h,m,xib}'
+	s.source_files	= 'ZWCommonTable'
 	s.requires_arc	= true
 
 end	
