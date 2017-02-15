@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
 	s.license	= 'MIT'
 	s.authors	= {'wangziwu'	=>	'wang_ziwu@126.com'}
 	s.platform	= :ios,'7.0'
+	s.ios.deployment_target = '7.0'
 	s.source	= {:git => 'https://github.com/wangziwu/ZWCommonTableDemo.git',:tag => s.version}
 	s.source.files	= 'ZWCommonTable/*.{h,m,xib}'
 	s.requires_arc	= true
