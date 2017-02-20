@@ -76,6 +76,12 @@
     if (!cell) {
         Class cellClass = NSClassFromString(identify);
         cell = [[cellClass alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identify];
+        //not find customCell
+        if (!cell) {
+            cellClass = NSClassFromString(DefaultCommonTableCell);
+            cell = [[cellClass alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:DefaultCommonTableCell];
+            NSLog(@"Please check u cellClassName!");
+        }
         NSString *path = [[NSBundle mainBundle] pathForResource:identify ofType:@".nib"];
         if (path) {
             //custom cell use xib
@@ -107,9 +113,16 @@
         return;
     }
     //default push
+    if (!cellRows.cellPushVcClassName.length) {
+        NSLog(@"Please check u cellPushVcClassName!");
+        return;
+    }
     Class vcClass = NSClassFromString(cellRows.cellPushVcClassName);
     UIViewController *vc = [[vcClass alloc] init];
-    vc.hidesBottomBarWhenPushed = YES;
+    if (!vc) {
+        NSLog(@"Please check u cellPushVcClassName!");
+        return;
+    }
     //pamer
     NSDictionary *dic = cellRows.cellPushVcKeyValue;
     for (NSString *key in dic.allKeys) {
