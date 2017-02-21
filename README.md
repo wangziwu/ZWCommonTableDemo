@@ -9,13 +9,13 @@
 ### 框架整体介绍
 * 该框架为一个通用Table页面展示的框架，旨在提供一种简单table页面规范书写的模板。
 * 1.支持普通tableView界面.
-	* [普通tableView效果图]（#普通tableView效果图）
+	* [普通tableView效果图](#普通tableView效果图)
 * 2.支持tableView中cell自定义.
-	 * [tableViewCell自定义效果图]（#tableViewCell自定义效果图）
+	 * [tableViewCell自定义效果图](#tableViewCell自定义效果图)
 * 3.框架中默认提供UITableViewCell,ZWCommonButtonCell, ZWCommonSwitchCell三种cell.
-	* [tableViewCell自定义效果图]（#tableViewCell自定义效果图）
+	* [tableViewCell自定义效果图](#tableViewCell自定义效果图)
 * 4.框架支持默认点击cell,push到自定义的Controller中.也可拦截p点击事件，执行到自定义方法中.
-	* [组合效果图]（#组合效果图）
+	* [组合效果图](#组合效果图)
 
 ### 框架使用方法
 - 直接把ZWCommonTable文件夹拖入到您的工程中.
@@ -77,11 +77,11 @@
 }
 ```
 
-### <a id="普通tableView效果图"></a>普通tableView效果图
+###<a id="普通tableView效果图"></a>普通tableView效果图
 ![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/普通tableView.png)
-### <a id="tableViewCell自定义效果图"></a>tableViewCell自定义效果图
+###<a id="tableViewCell自定义效果图"></a>tableViewCell自定义效果图
 ![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/样例一.png)
 ![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/样例二.png)
 ![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/自定义cell.png)
-### <a id="组合效果图"></a>组合效果图
-![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/ZWCommontable.gif)
+###<a id="组合效果图"></a>组合效果图
+![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/ZWCommonTable.gif)
