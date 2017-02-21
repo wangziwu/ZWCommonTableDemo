@@ -19,17 +19,22 @@
 
 ### 框架使用方法
 - 直接把ZWCommonTable文件夹拖入到您的工程中.
+  
   ```objc
   #import "ZWCommonTable.h"
   ``` 
+  
 - Cocoapods安装
+  
   ```objc
   pod search ZWCommonTable
   pod 'ZWCommonTable',		'~> 0.0.4'
   ```
+  
   ```objc
-  #import "ZWCommonTable.h"
+  #import <ZWCommonTable/ZWCommonTable.h>
   ```
+  
   如果发现pod search ZWCommonTable,然后执行pod repo update --verbose命令更新本地spec缓存（可能需要几分钟），然后再搜索就可以了.
   
 ### 代码解析
