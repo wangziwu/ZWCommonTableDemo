@@ -9,6 +9,7 @@
 #import "ZWCommonTableDelegate.h"
 #import "ZWCommonTableData.h"
 #import "ZWCommonTableCellProtocol.h"
+#import "ZWStaticModelProtocol.h"
 @interface ZWCommonTableDelegate ()
 /** */
 @property (nonatomic, copy) NSArray *(^ReciverData)(void);
@@ -70,8 +71,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ZWCommonTableSection *sectionModel = self.tableData[indexPath.section];
     ZWCommonTableRow *cellRows = sectionModel.tableRows[indexPath.row];
-    NSString *identify = cellRows.cellClassName.length?cellRows.cellClassName:DefaultCommonTableCell;
-    
+    NSString *identify = [self judgeCellClazzName:cellRows];
     UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:identify];
     if (!cell) {
         Class cellClass = NSClassFromString(identify);
@@ -143,6 +143,22 @@
     cell.detailTextLabel.text = cellRows.cellDetailTitle;
     cell.detailTextLabel.font = [UIFont systemFontOfSize:cellRows.cellDetailTitleFont];
 }
+#pragma mark - config
+#pragma mark - lifeCycle
+#pragma mark - delegate
+#pragma mark - actionFunction
+#pragma mark - function
+- (NSString *)judgeCellClazzName:(ZWCommonTableRow *)cellRow{
+    NSString *clazzName = DefaultCommonTableCell;
+    if (cellRow.cellClassName.length) {
+        clazzName = cellRow.cellClassName;
+    }
+    id<ZWStaticModelProtocol>cellModel = cellRow.cellExtraInfo;
+    if (cellModel.zw_cellClassName.length) {
+        clazzName = cellModel.zw_cellClassName;
+    }
+    return clazzName;
+}
 //util
 -(UIViewController *)getSuperViewController:(UIView *)view{
     for (UIView* next = view; next; next = next.superview) {
@@ -153,5 +169,5 @@
     }
     return nil;
 }
-
+#pragma mark - layzing
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "WeChatInfoModel.h"
-
 @implementation WeChatInfoModel
-
+ZWConfigCellModel(@"WeChatMineInfoCell");
 @end

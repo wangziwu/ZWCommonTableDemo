@@ -7,10 +7,7 @@
 //
 
 #import "ZWCommonTableData.h"
-
-#define DefaultRowHeight                50
-#define DefaultTitleFontSize            15
-#define DefaultDetailTitleFont          15
+#import "ZWCommonConfig.h"
 @implementation ZWCommonTableRow
 
 - (instancetype)initWithDic:(NSDictionary *)rowDict{
@@ -20,21 +17,20 @@
     if (self) {
         _cellTitle              = rowDict[CellTitle];
         _cellTitleFont          = [rowDict[CellTitleFont] floatValue];
-        _cellTitleFont          = _cellTitleFont?_cellTitleFont:DefaultTitleFontSize;
+        _cellTitleFont          = _cellTitleFont?_cellTitleFont:ZWCommonShareConfig.titleFontSize;
         _cellImageName          = rowDict[CellImageName];
         _cellDetailTitle        = rowDict[CellDetailTitle];
         _cellDetailTitleFont    = [rowDict[CellDetailTitleFont] floatValue];
-        _cellDetailTitleFont    = _cellDetailTitleFont?_cellDetailTitleFont:DefaultDetailTitleFont;
+        _cellDetailTitleFont    = _cellDetailTitleFont?_cellDetailTitleFont:ZWCommonShareConfig.detailTitleFontSize;
         _cellClassName          = rowDict[CellClassName];
         _cellPushVcClassName    = rowDict[CellPushVcClassName];
         _cellActionSelName      = rowDict[CellActionSelName];
         _cellRowHeight          = [rowDict[CellRowHeight] floatValue];
-        _cellRowHeight          = _cellRowHeight?_cellRowHeight:DefaultRowHeight;
-        _isHiddenAccessory        = [rowDict[IsHiddenAccessory] boolValue];
+        _cellRowHeight          = _cellRowHeight?_cellRowHeight:ZWCommonShareConfig.commonCellHeight;
+        _isHiddenAccessory      = rowDict[IsHiddenAccessory]?[rowDict[IsHiddenAccessory] boolValue]:YES;
         _isForbidSelect         = [rowDict[IsForbidSelect] boolValue];
         _cellExtraInfo          = rowDict[CellExtraInfo];
         _cellPushVcKeyValue     = rowDict[CellPushVcKeyValue];
-        _isCellSwitchOn         = [rowDict[IsCellSwitchOn] boolValue];
     }
     return self;
 }

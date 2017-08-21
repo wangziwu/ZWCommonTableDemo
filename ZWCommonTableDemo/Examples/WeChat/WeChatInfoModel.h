@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface WeChatInfoModel : NSObject
+#import "ZWStaticModelProtocol.h"
+@interface WeChatInfoModel : NSObject<ZWStaticModelProtocol>
 /** headerImage*/
 @property (nonatomic, copy) NSString *headerImage;
 /** name*/

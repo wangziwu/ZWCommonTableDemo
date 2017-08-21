@@ -9,7 +9,7 @@
 #import "WeChatMineCtr.h"
 #import "ZWCommonTable.h"
 #import "WeChatInfoModel.h"
-@interface WeChatMineCtr ()
+@interface WeChatMineCtr ()<UIScrollViewDelegate>
 /** */
 @property (nonatomic, strong) ZWCommonTableDelegate *comDelegate;
 /** */
@@ -49,50 +49,42 @@
     infoModel.weChatName        = @"KingWeChat";
     self.dataSourceArr = @[
                            @{
-                               SectionHeaderTitle    :@"",
                                SectionHeaderHeight   :headerHeight,
-                               SectionFooterTitle    :@"",
                                SectionFooterHeight   :footerHeight,
                                SectionRows           :@[
                                        @{
                                            CellRowHeight       :@"100",
-                                           CellClassName       :@"WeChatMineInfoCell",
+                                           IsHiddenAccessory   :@(NO),
                                            CellExtraInfo       :infoModel
                                            }
                                        ]
                                },
                            @{
-                               SectionHeaderTitle    :@"",
                                SectionHeaderHeight   :headerHeight,
-                               SectionFooterTitle    :@"",
                                SectionFooterHeight   :footerHeight,
                                SectionRows           :@[
                                        @{
                                            CellTitle           :@"相册",
                                            CellImageName       :@"MoreMyAlbum_25x25_",
-                                           CellPushVcClassName :@""
+                                           CellPushVcClassName :@"UIViewController"
                                            },
                                        @{
                                            CellTitle           :@"收藏",
                                            CellImageName       :@"MoreMyFavorites_25x25_",
-                                           CellPushVcClassName :@""
                                            },
                                        @{
                                            CellTitle           :@"钱包",
                                            CellImageName       :@"MoreMyBankCard_25x25_",
-                                           CellPushVcClassName :@""
                                            },
                                        @{
                                            CellTitle           :@"卡包",
                                            CellImageName       :@"MyCardPackageIcon_25x25_",
-                                           CellPushVcClassName :@""
+                                           
                                            }
                                        ]
                                },
                            @{
-                               SectionHeaderTitle    :@"",
                                SectionHeaderHeight   :headerHeight,
-                               SectionFooterTitle    :@"",
                                SectionFooterHeight   :footerHeight,
                                SectionRows           :@[
                                        @{
@@ -103,10 +95,7 @@
                                        ]
                                },
                            @{
-                               SectionHeaderTitle    :@"",
                                SectionHeaderHeight   :headerHeight,
-                               SectionFooterTitle    :@"",
-                               SectionFooterHeight   :@"",
                                SectionRows           :@[
                                        @{
                                            CellTitle           :@"设置",

@@ -47,9 +47,9 @@
                                SectionRows           :@[
                                        @{
                                            CellTitle           :@"账号与安全",
-                                           CellPushVcClassName :@"",
                                            CellDetailTitle     :@"已保护",
-                                           CellClassName       :@"CommonDetailImageCell"
+                                           CellClassName       :@"CommonDetailImageCell",
+                                           IsHiddenAccessory   :@(NO)
                                            }
                                        ]
                                },

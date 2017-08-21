@@ -45,91 +45,82 @@
 -(void)setData{
     WeChatInfoModel *infoModel  = [[WeChatInfoModel alloc] init];
     infoModel.headerImage       = @"WechatIMG2";
-    infoModel.name              = @"Kingzzz";
+    infoModel.name              = @"wang_ziwu";
     infoModel.weChatName        = @"KingWeChat";
+    
+    ZWStaticSwitchModel *msgValidModel = [[ZWStaticSwitchModel alloc] init];
+    msgValidModel.title = @"消息验证";
+    msgValidModel.actionSwitchName = @"actionSwitch:";
+
+    ZWStaticSwitchModel *recommendModel = [[ZWStaticSwitchModel alloc] init];
+    recommendModel.title = @"像我推荐通讯录朋友";
+    
     self.dataSourceArr = @[
                            @{
-                               SectionHeaderTitle    :@"",
                                SectionHeaderHeight   :headerHeight,
-                               SectionFooterTitle    :@"",
                                SectionFooterHeight   :footerHeight,
                                SectionRows           :@[
                                        @{
+                                           IsHiddenAccessory    :@(NO),
                                            CellRowHeight        :@"100",
-                                           CellClassName        :@"WeChatMineInfoCell",
                                            CellExtraInfo        :infoModel
                                            }
                                        ]
                                },
                            @{
-                               SectionHeaderTitle    :@"",
                                SectionHeaderHeight   :headerHeight,
-                               SectionFooterTitle    :@"",
                                SectionFooterHeight   :footerHeight,
                                SectionRows           :@[
                                        @{
                                            CellTitle            :@"微信事例一",
                                            CellImageName        :@"MoreMyAlbum_25x25_",
-                                           CellPushVcClassName  :@"WeChatMineCtr"
+                                           CellPushVcClassName  :@"WeChatMineCtr",
+                                           IsHiddenAccessory    :@(NO)
                                            },
                                        @{
                                            CellTitle            :@"微信事例二",
                                            CellImageName        :@"MoreMyFavorites_25x25_",
-                                           CellActionSelName    :@"actionToExampCtr"
+                                           CellActionSelName    :@"actionToExampCtr",
+                                           IsHiddenAccessory    :@(NO)
                                            }
                                        ]
                                },
                            @{
-                               SectionHeaderTitle    :@"",
                                SectionHeaderHeight   :headerHeight,
-                               SectionFooterTitle    :@"",
                                SectionFooterHeight   :footerHeight,
                                SectionRows           :@[
                                        @{
                                            CellTitle            :@"字体大小",
                                            CellDetailTitle      :@"小号字体",
-                                           IsHiddenAccessory    :@(YES)
                                            },
                                        @{
                                            CellTitle            :@"缓存大小",
                                            CellDetailTitle      :@"1000KB",
-                                           CellActionSelName    :@"actionClearCach"
+                                           CellActionSelName    :@"actionClearCach",
+                                           IsHiddenAccessory    :@(NO)
                                            }
                                        ]
                                },
                            @{
-                               SectionHeaderTitle    :@"",
                                SectionHeaderHeight   :headerHeight,
-                               SectionFooterTitle    :@"开启后，为你推荐已经开通微信的手机联系人\
-                               开启后，为你推荐已经开通微信的手机联系人等等等等等",
+                               SectionFooterTitle    :@"开启后，为你推荐已经开通微信的手机联系人",
                                SectionFooterHeight   :@"50",
                                SectionRows           :@[
                                        @{
-                                           CellTitle            :@"消息验证",
-                                           IsHiddenAccessory    :@(YES),
-                                           CellClassName        :@"ZWCommonSwitchCell",
-                                           IsForbidSelect       :@(YES),
-                                           CellActionSelName    :@"messVavid:"
+                                           CellExtraInfo        :msgValidModel
                                            },
                                        @{
-                                           CellTitle            :@"像我推荐通讯录朋友",
-                                           IsHiddenAccessory    :@(YES),
-                                           CellClassName        :@"ZWCommonSwitchCell",
-                                           IsForbidSelect       :@(YES)
+                                           CellExtraInfo        :recommendModel
                                            }
                                        ]
                                },
                            @{
-                               SectionHeaderTitle    :@"",
                                SectionHeaderHeight   :headerHeight,
-                               SectionFooterTitle    :@"",
-                               SectionFooterHeight   :@"",
                                SectionRows           :@[
                                        @{
                                            CellTitle            :@"退出",
-                                           CellClassName        :@"ZWCommonButtonCell",
-                                           IsHiddenAccessory    :@(YES),
                                            CellRowHeight        :@"40",
+                                           CellClassName        :@"ZWStaticButtonCell",
                                            CellActionSelName    :@"actionExitLogin"
                                            }
                                        ]
@@ -150,6 +141,21 @@
         
     }]];
     [self presentViewController:alert animated:YES completion:nil];
+}
+- (void)actionSwitch:(UISwitch *)mSwitch{
+    NSString *alertMessage;
+    if (mSwitch.on) {
+        alertMessage = @"open";
+    }else{
+        alertMessage = @"close";
+    }
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:alertMessage preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        
+    }]];
+    [self presentViewController:alert animated:YES completion:^{
+        
+    }];
 }
 -(void)messVavid:(UISwitch *)mSwitch{
     NSString *alertMessage;

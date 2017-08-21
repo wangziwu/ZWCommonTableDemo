@@ -34,53 +34,86 @@
 #define IsHiddenAccessory       @"isHiddenAccessory"
 #define IsForbidSelect          @"isForbidSelect"
 
-//
-#define IsCellSwitchOn          @"isCellSwitchOn"
-
 @interface ZWCommonTableRow : NSObject
-/** */
+/** 
+ *  默认title
+ */
 @property (nonatomic, copy) NSString *cellTitle;
-/** */
-@property (nonatomic, assign) CGFloat cellTitleFont;
-/** */
-@property (nonatomic, copy) NSString *cellImageName;
-/** */
+/** 
+ *  默认DetailTitle
+ */
 @property (nonatomic, copy) NSString *cellDetailTitle;
-/** */
+/** 
+ *  image
+ */
+@property (nonatomic, copy) NSString *cellImageName;
+/** 
+ *  title字体大小
+ */
+@property (nonatomic, assign) CGFloat cellTitleFont;
+/** 
+ *  DetailTitle字体大小
+ */
 @property (nonatomic, assign) CGFloat cellDetailTitleFont;
-/** custom cell*/
+/** 
+ *  设定当前加载cell的类名
+ */
 @property (nonatomic, copy) NSString *cellClassName;
-/** default DidSelected to push ViewController */
+/** 
+ *  设定默认执行PUSH的Controller
+ */
 @property (nonatomic, copy) NSString *cellPushVcClassName;
-/** runtime setValue:forKey by dictionary value and key*/
-@property (nonatomic, strong) NSDictionary *cellPushVcKeyValue;
-/** custom cell action */
+/** 
+ *  cell点击事件方法名。
+ *  自动去主控制器寻找该方法
+ */
 @property (nonatomic, copy) NSString *cellActionSelName;
-/** */
+/** 
+ *  默认PUSH的Controller的KeyValue
+ */
+@property (nonatomic, strong) NSDictionary *cellPushVcKeyValue;
+
+/** 
+ *  cell高度
+ */
 @property (nonatomic, assign) CGFloat cellRowHeight;
-/** */
+/** 
+ *  是否隐藏右侧箭头，默认YES
+ */
 @property (nonatomic, assign) BOOL isHiddenAccessory;
-/** */
+/** 
+ *  是否禁止点击事件
+ */
 @property (nonatomic, assign) BOOL isForbidSelect;
-/** extra*/
+/** 
+ *  cell拓展,自定义cell数据来源
+ */
 @property (nonatomic, strong) id cellExtraInfo;
-//switch
-@property (nonatomic, assign) BOOL isCellSwitchOn;
 
 - (instancetype)initWithDic:(NSDictionary *)rowDict;
 
 @end
 
 @interface ZWCommonTableSection : NSObject
-/** header*/
+/** 
+ *  section header title
+ */
 @property (nonatomic, copy) NSString *headerTitle;
-/** footer*/
+/** 
+ *  section footer title
+ */
 @property (nonatomic, copy) NSString *footerTitle;
-/** headerHeight*/
+/** 
+ *  header高度
+ */
 @property (nonatomic, assign) CGFloat headerHeight;
-/** footerHeigher*/
+/**
+ *  footer高度
+ */
 @property (nonatomic, assign) CGFloat footerHeight;
-/** rows*/
+/** 
+ *  sectionRows集合
+ */
 @property (nonatomic, strong) NSArray<ZWCommonTableRow *> *tableRows;
 
 - (instancetype)initWithDic:(NSDictionary *)secDict;

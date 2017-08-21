@@ -12,6 +12,12 @@
 #import "ZWCommonTableDelegate.h"
 #import "ZWCommonTableData.h"
 #import "ZWCommonTableCellProtocol.h"
-
+#import "ZWStaticModelProtocol.h"
+#import "ZWStaticSwitchModel.h"
+#import "ZWStaticTextCellModel.h"
+#import "ZWStaticInputModel.h"
+#import "ZWStaticOptionModel.h"
+#import "ZWStaticTextViewModel.h"
+#import "ZWCommonConfig.h"
 #endif /* ZWCommonTable_h */
 

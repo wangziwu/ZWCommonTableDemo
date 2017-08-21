@@ -10,7 +10,7 @@
 #import "ZWCommonTable.h"
 @interface ViewController ()
 /** */
-@property (nonatomic, strong) ZWCommonTableDelegate *comDelegate;
+@property (nonatomic, strong) ZWCommonTableDelegate *adapter;
 /** */
 @property (nonatomic, strong) NSArray *dataSourceArr;
 @end
@@ -25,26 +25,23 @@
 }
 -(void)setupTableView{
     __weak typeof(self) weakSelf = self;
-    _comDelegate = [[ZWCommonTableDelegate alloc] initWithTableData:^NSArray *{
+    _adapter = [[ZWCommonTableDelegate alloc] initWithTableData:^NSArray *{
         return weakSelf.dataSourceArr;
     }];
     UITableView *mTable = [[UITableView alloc] initWithFrame:self.view.bounds
                                                        style:UITableViewStylePlain];
     mTable.tableFooterView = [UIView new];
-    mTable.delegate = _comDelegate;
-    mTable.dataSource = _comDelegate;
+    mTable.delegate = _adapter;
+    mTable.dataSource = _adapter;
+    mTable.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
     [self.view addSubview:mTable];
 }
 -(void)setData{
     self.dataSourceArr = @[
                            @{
-                               SectionHeaderTitle    :@"",
-                               SectionHeaderHeight   :@"",
-                               SectionFooterTitle    :@"",
-                               SectionFooterHeight   :@"",
                                SectionRows           :@[
                                        @{
-                                           CellTitle           :@"微信-事例一",
+                                           CellTitle           :@"微信_事例一",
                                            CellPushVcClassName :@"WeChatMineCtr"
                                            },
                                        @{
@@ -53,13 +50,19 @@
                                            },
                                        @{
                                            CellTitle           :@"通用",
-                                           CellImageName       :@"icon_profile_depart",
                                            CellPushVcClassName :@"CommonTableCtr"
-                                           }
+                                           },
+                                       @{
+                                           CellTitle           :@"多输入模式",
+                                           CellPushVcClassName :@"InputSubmitCtr"
+                                           },
                                        ]
                                },
                            ];
     self.dataSourceArr = [ZWCommonTableSection sectionsWithData:self.dataSourceArr];
+}
+-(void)textChange:(UITextField *)textField{
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

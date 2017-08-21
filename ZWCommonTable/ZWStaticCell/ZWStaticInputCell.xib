@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZWStaticInputCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9M-j8-Thl">
+                        <rect key="frame" x="20" y="13" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pe6-Fr-42t">
+                        <rect key="frame" x="57.5" y="0.0" width="252.5" height="43.5"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O9M-j8-Thl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="46f-Ep-SCP"/>
+                    <constraint firstItem="pe6-Fr-42t" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9Xc-Fb-fxp"/>
+                    <constraint firstAttribute="trailing" secondItem="pe6-Fr-42t" secondAttribute="trailing" constant="10" id="LyL-M5-0jb"/>
+                    <constraint firstItem="pe6-Fr-42t" firstAttribute="leading" secondItem="O9M-j8-Thl" secondAttribute="trailing" id="OiW-eN-ZVI"/>
+                    <constraint firstAttribute="bottom" secondItem="pe6-Fr-42t" secondAttribute="bottom" id="YxZ-VL-ibM"/>
+                    <constraint firstItem="pe6-Fr-42t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hVh-Db-9hT"/>
+                    <constraint firstItem="O9M-j8-Thl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="p1Z-TT-XUU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="zw_inputTextField" destination="pe6-Fr-42t" id="Ugx-Qz-wi2"/>
+                <outlet property="zw_inputTitleLab" destination="O9M-j8-Thl" id="tXB-NY-eu3"/>
+            </connections>
+            <point key="canvasLocation" x="-41" y="-183"/>
+        </tableViewCell>
+    </objects>
+</document>
