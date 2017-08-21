@@ -18,14 +18,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self configNav];
 }
 #pragma mark - config
+- (void)configNav{
+    UIButton *rightBarBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightBarBtn setTitle:@"保存" forState:UIControlStateNormal];
+    [rightBarBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    rightBarBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+    [rightBarBtn addTarget:self action:@selector(actionSaveInfo) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightBarItem = [[UIBarButtonItem alloc]initWithCustomView:rightBarBtn];
+    self.navigationItem.rightBarButtonItem = rightBarItem;
+    [rightBarBtn sizeToFit];
+}
 #pragma mark - lifeCycle
 - (NSArray *)staticDataArray{
     return self.viewModel.staticDataArray;
 }
 #pragma mark - delegate
 #pragma mark - actionFunction
+- (void)actionSaveInfo{
+    if (!self.viewModel.dynamicData.uname.length) {
+        NSLog(@"姓名不能为空！");
+        return;
+    }
+    if (!self.viewModel.dynamicData.usex.length) {
+        NSLog(@"请选择性别！");
+        return;
+    }
+    //net todo
+}
 - (void)actionSelectSex{
     __weak typeof(self) weakSelf = self;
     UIAlertController *alertCtr = [UIAlertController alertControllerWithTitle:@"性别选择" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
