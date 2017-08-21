@@ -157,21 +157,6 @@
         
     }];
 }
--(void)messVavid:(UISwitch *)mSwitch{
-    NSString *alertMessage;
-    if (mSwitch.on) {
-        alertMessage = @"open";
-    }else{
-        alertMessage = @"close";
-    }
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:alertMessage preferredStyle:UIAlertControllerStyleAlert];
-    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-        
-    }]];
-    [self presentViewController:alert animated:YES completion:^{
-        
-    }];
-}
 -(void)actionExitLogin{
     [self.navigationController popViewControllerAnimated:YES];
 }

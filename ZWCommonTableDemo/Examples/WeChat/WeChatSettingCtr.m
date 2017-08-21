@@ -95,7 +95,7 @@
                                SectionRows           :@[
                                        @{
                                            CellTitle           :@"退出登录",
-                                           CellClassName       :@"ZWCommonButtonCell",
+                                           CellClassName       :@"ZWStaticButtonCell",
                                            IsHiddenAccessory   :@(YES),
                                            CellRowHeight       :@"40",
                                            CellActionSelName   :@"actionExitLogin"

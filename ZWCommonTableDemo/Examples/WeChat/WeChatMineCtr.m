@@ -66,19 +66,23 @@
                                        @{
                                            CellTitle           :@"相册",
                                            CellImageName       :@"MoreMyAlbum_25x25_",
-                                           CellPushVcClassName :@"UIViewController"
+                                           CellPushVcClassName :@"UIViewController",
+                                           IsHiddenAccessory   :@(NO),
                                            },
                                        @{
                                            CellTitle           :@"收藏",
                                            CellImageName       :@"MoreMyFavorites_25x25_",
+                                           IsHiddenAccessory   :@(NO),
                                            },
                                        @{
                                            CellTitle           :@"钱包",
                                            CellImageName       :@"MoreMyBankCard_25x25_",
+                                           IsHiddenAccessory   :@(NO),
                                            },
                                        @{
                                            CellTitle           :@"卡包",
                                            CellImageName       :@"MyCardPackageIcon_25x25_",
+                                           IsHiddenAccessory   :@(NO),
                                            
                                            }
                                        ]
@@ -90,7 +94,7 @@
                                        @{
                                            CellTitle           :@"表情",
                                            CellImageName       :@"MoreExpressionShops_25x25_",
-                                           CellPushVcClassName :@""
+                                           IsHiddenAccessory   :@(NO),
                                            }
                                        ]
                                },
@@ -100,7 +104,8 @@
                                        @{
                                            CellTitle           :@"设置",
                                            CellImageName       :@"MoreSetting_25x25_",
-                                           CellPushVcClassName :@"WeChatSettingCtr"
+                                           CellPushVcClassName :@"WeChatSettingCtr",
+                                           IsHiddenAccessory   :@(NO),
                                            }
                                        ]
                                },
