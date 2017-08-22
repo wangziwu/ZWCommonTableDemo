@@ -6,16 +6,14 @@
 ### 简介
 * An easy way to build CommontableController.
 
+### 详细介绍参考我的[简书](http://www.jianshu.com/p/bb172ecf68fe)
+[http://www.jianshu.com/p/bb172ecf68fe](http://www.jianshu.com/p/bb172ecf68fe)
+
 ### 框架整体介绍
 * 该框架为一个通用Table页面展示的框架，旨在提供一种简单table页面规范书写的模板。
 * 1.支持普通tableView界面.
-	* [普通tableView效果图](#普通tableView效果图)
 * 2.支持tableView中cell自定义.
-	 * [tableViewCell自定义效果图](#tableViewCell自定义效果图)
-* 3.框架中默认提供UITableViewCell,ZWCommonButtonCell, ZWCommonSwitchCell三种cell.
-	* [tableViewCell自定义效果图](#tableViewCell自定义效果图)
 * 4.框架支持默认点击cell,push到自定义的Controller中.也可拦截p点击事件，执行到自定义方法中.
-	* [组合效果图](#组合效果图)
 
 ### 框架使用方法
 - 直接把ZWCommonTable文件夹拖入到您的工程中.
@@ -28,7 +26,7 @@
   
   ```objc
   pod search ZWCommonTable
-  pod 'ZWCommonTable',		'~> 0.0.4'
+  pod 'ZWCommonTable',		'~> 1.0.0'
   ```
   
   ```objc
@@ -38,8 +36,11 @@
   如果发现pod search ZWCommonTable,然后执行pod repo update --verbose命令更新本地spec缓存（可能需要几分钟），然后再搜索就可以了.
   
 ### 代码解析
+
 配置UITableView的协议转发.
+
 ```objc
+
 -(void)setupTableView{
     __weak typeof(self) weakSelf = self;
     _comDelegate = [[ZWCommonTableDelegate alloc] initWithTableData:^NSArray *{
@@ -81,12 +82,3 @@
     self.dataSourceArr = [ZWCommonTableSection sectionsWithData:self.dataSourceArr];
 }
 ```
-
-###<a id="普通tableView效果图"></a>普通tableView效果图
-![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/普通tableView.png)
-###<a id="tableViewCell自定义效果图"></a>tableViewCell自定义效果图
-![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/样例一.png)
-![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/样例二.png)
-![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/自定义cell.png)
-###<a id="组合效果图"></a>组合效果图
-![image](https://github.com/wangziwu/ZWCommonTableDemo/blob/master/预览图/ZWCommonTable.gif)

@@ -8,7 +8,11 @@
 
 #import "ZWStaticOptionModel.h"
 @implementation ZWStaticOptionModel
+
 ZWConfigCellModel(@"ZWStaticOptionCell");
+
+
+
 -(NSString *)optionDefaultText{
     if (!_optionDefaultText) {
         _optionDefaultText = @"请选择";

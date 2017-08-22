@@ -11,7 +11,7 @@
 @interface WeChatSettingCtr ()
 @property (weak, nonatomic) IBOutlet UITableView *mTable;
 /** */
-@property (nonatomic, strong) ZWCommonTableDelegate *comDelegate;
+@property (nonatomic, strong) ZWCommonTableDelegate *tableAdapter;
 /** */
 @property (nonatomic, strong) NSArray *dataSourceArr;
 @end
@@ -26,16 +26,12 @@
     [self setupTableView];
 }
 -(void)setupTableView{
-    __weak typeof(self) weakSelf = self;
-    _comDelegate = [[ZWCommonTableDelegate alloc] initWithTableData:^NSArray *{
-        return weakSelf.dataSourceArr;
-    }];
+
     self.mTable.tableFooterView = [UIView new];
     self.mTable.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.mTable.frame.size.width, CGFLOAT_MIN)];
     self.mTable.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    self.mTable.delegate = _comDelegate;
-    self.mTable.dataSource = _comDelegate;
-    [self.view addSubview:self.mTable];
+    self.mTable.delegate = self.tableAdapter;
+    self.mTable.dataSource = self.tableAdapter;
 }
 -(void)setData{
     self.dataSourceArr = @[
@@ -107,6 +103,14 @@
 }
 -(void)actionExitLogin{
     [self.navigationController popViewControllerAnimated:YES];
+}
+-(ZWCommonTableDelegate *)tableAdapter{
+    if (!_tableAdapter) {
+        _tableAdapter = [[ZWCommonTableDelegate alloc] initWithTableData:^NSArray *{
+            return self.dataSourceArr;;
+        }];
+    }
+    return _tableAdapter;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

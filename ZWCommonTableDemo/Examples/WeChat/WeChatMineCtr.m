@@ -11,7 +11,7 @@
 #import "WeChatInfoModel.h"
 @interface WeChatMineCtr ()<UIScrollViewDelegate>
 /** */
-@property (nonatomic, strong) ZWCommonTableDelegate *comDelegate;
+@property (nonatomic, strong) ZWCommonTableDelegate *tableAdapter;
 /** */
 @property (nonatomic, strong) NSArray *dataSourceArr;
 @end
@@ -28,17 +28,13 @@
     [self setupTableView];
 }
 -(void)setupTableView{
-    __weak typeof(self) weakSelf = self;
-    _comDelegate = [[ZWCommonTableDelegate alloc] initWithTableData:^NSArray *{
-        return weakSelf.dataSourceArr;
-    }];
     UITableView *mTable = [[UITableView alloc] initWithFrame:self.view.bounds
                                                        style:UITableViewStyleGrouped];
     mTable.tableFooterView = [UIView new];
     mTable.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, mTable.frame.size.width, CGFLOAT_MIN)];
     mTable.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    mTable.delegate = _comDelegate;
-    mTable.dataSource = _comDelegate;
+    mTable.delegate = self.tableAdapter;
+    mTable.dataSource = self.tableAdapter;
     [self.view addSubview:mTable];
 }
 -(void)setData{
@@ -111,6 +107,14 @@
                                },
                            ];
     self.dataSourceArr = [ZWCommonTableSection sectionsWithData:self.dataSourceArr];
+}
+-(ZWCommonTableDelegate *)tableAdapter{
+    if (!_tableAdapter) {
+        _tableAdapter = [[ZWCommonTableDelegate alloc] initWithTableData:^NSArray *{
+            return self.dataSourceArr;;
+        }];
+    }
+    return _tableAdapter;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

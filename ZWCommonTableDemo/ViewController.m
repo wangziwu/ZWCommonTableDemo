@@ -42,19 +42,27 @@
                                SectionRows           :@[
                                        @{
                                            CellTitle           :@"微信_事例一",
-                                           CellPushVcClassName :@"WeChatMineCtr"
+                                           CellPushVcClassName :@"WeChatMineCtr",
+                                           CellImageName       :@"MoreMyBankCard_25x25_",
+                                           IsHiddenAccessory   :@(NO)
                                            },
                                        @{
                                            CellTitle           :@"微信_事例二",
-                                           CellPushVcClassName :@"WeChatSettingCtr"
+                                           CellPushVcClassName :@"WeChatSettingCtr",
+                                           CellImageName       :@"MoreMyBankCard_25x25_",
+                                           IsHiddenAccessory   :@(NO)
                                            },
                                        @{
                                            CellTitle           :@"通用",
-                                           CellPushVcClassName :@"CommonTableCtr"
+                                           CellPushVcClassName :@"CommonTableCtr",
+                                           CellImageName       :@"MoreMyBankCard_25x25_",
+                                           IsHiddenAccessory   :@(NO)
                                            },
                                        @{
                                            CellTitle           :@"多输入模式",
-                                           CellPushVcClassName :@"InputSubmitCtr"
+                                           CellPushVcClassName :@"InputSubmitCtr",
+                                           CellImageName       :@"MoreMyBankCard_25x25_",
+                                           IsHiddenAccessory   :@(NO)
                                            },
                                        ]
                                },
