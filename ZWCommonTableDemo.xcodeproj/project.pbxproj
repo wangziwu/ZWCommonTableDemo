@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8524ACB81F47DFC4004B2D17 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACB71F47DFC4004B2D17 /* UserInfoModel.m */; };
 		8524ACBB1F47E07C004B2D17 /* InputSubmitViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACBA1F47E07C004B2D17 /* InputSubmitViewModel.m */; };
-		8524ACBE1F481D05004B2D17 /* ZWCommonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACBD1F481D05004B2D17 /* ZWCommonConfig.m */; };
 		8524ACC21F4827A8004B2D17 /* ZWStaticOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACC01F4827A8004B2D17 /* ZWStaticOptionCell.m */; };
 		8524ACC31F4827A8004B2D17 /* ZWStaticOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8524ACC11F4827A8004B2D17 /* ZWStaticOptionCell.xib */; };
 		8524ACCA1F482C05004B2D17 /* ZWStaticOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACC91F482C05004B2D17 /* ZWStaticOptionModel.m */; };
@@ -32,9 +31,12 @@
 		857DDCE51F46EFA800828758 /* WeChatMineInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCE11F46EFA800828758 /* WeChatMineInfoCell.m */; };
 		857DDCE61F46EFA800828758 /* WeChatMineInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857DDCE21F46EFA800828758 /* WeChatMineInfoCell.xib */; };
 		857DDCEB1F46F59600828758 /* InputSubmitCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCE91F46F59600828758 /* InputSubmitCtr.m */; };
-		857DDCEF1F46F8EB00828758 /* ZWCommonTableCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCEE1F46F8EB00828758 /* ZWCommonTableCtr.m */; };
 		85A225021E45C49C00E15444 /* WeChatSettingCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A225001E45C49B00E15444 /* WeChatSettingCtr.m */; };
 		85A225031E45C49C00E15444 /* WeChatSettingCtr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A225011E45C49B00E15444 /* WeChatSettingCtr.xib */; };
+		85C1DAEB1F66723800A0B2E0 /* ZWCommonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C1DAE41F66723800A0B2E0 /* ZWCommonConfig.m */; };
+		85C1DAEC1F66723800A0B2E0 /* ZWCommonTableCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C1DAE61F66723800A0B2E0 /* ZWCommonTableCtr.m */; };
+		85C1DAED1F66723800A0B2E0 /* ZWCommonTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C1DAE81F66723800A0B2E0 /* ZWCommonTableData.m */; };
+		85C1DAEE1F66723800A0B2E0 /* ZWCommonTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C1DAEA1F66723800A0B2E0 /* ZWCommonTableDelegate.m */; };
 		85D9FE5B1E334B4100D1E598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D9FE5A1E334B4100D1E598 /* main.m */; };
 		85D9FE5E1E334B4100D1E598 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D9FE5D1E334B4100D1E598 /* AppDelegate.m */; };
 		85D9FE611E334B4100D1E598 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D9FE601E334B4100D1E598 /* ViewController.m */; };
@@ -42,8 +44,6 @@
 		85D9FE661E334B4100D1E598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D9FE651E334B4100D1E598 /* Assets.xcassets */; };
 		85D9FE691E334B4100D1E598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D9FE671E334B4100D1E598 /* LaunchScreen.storyboard */; };
 		85D9FE7E1E335B4B00D1E598 /* WeChatMineCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D9FE7D1E335B4B00D1E598 /* WeChatMineCtr.m */; };
-		85F5A2771E53EF4800B0A071 /* ZWCommonTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F5A2711E53EF4800B0A071 /* ZWCommonTableData.m */; };
-		85F5A2781E53EF4800B0A071 /* ZWCommonTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F5A2731E53EF4800B0A071 /* ZWCommonTableDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +51,6 @@
 		8524ACB71F47DFC4004B2D17 /* UserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
 		8524ACB91F47E07C004B2D17 /* InputSubmitViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSubmitViewModel.h; sourceTree = "<group>"; };
 		8524ACBA1F47E07C004B2D17 /* InputSubmitViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputSubmitViewModel.m; sourceTree = "<group>"; };
-		8524ACBC1F481D05004B2D17 /* ZWCommonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonConfig.h; sourceTree = "<group>"; };
-		8524ACBD1F481D05004B2D17 /* ZWCommonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonConfig.m; sourceTree = "<group>"; };
 		8524ACBF1F4827A8004B2D17 /* ZWStaticOptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticOptionCell.h; sourceTree = "<group>"; };
 		8524ACC01F4827A8004B2D17 /* ZWStaticOptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticOptionCell.m; sourceTree = "<group>"; };
 		8524ACC11F4827A8004B2D17 /* ZWStaticOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticOptionCell.xib; sourceTree = "<group>"; };
@@ -92,11 +90,17 @@
 		857DDCE21F46EFA800828758 /* WeChatMineInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeChatMineInfoCell.xib; sourceTree = "<group>"; };
 		857DDCE81F46F59600828758 /* InputSubmitCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSubmitCtr.h; sourceTree = "<group>"; };
 		857DDCE91F46F59600828758 /* InputSubmitCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputSubmitCtr.m; sourceTree = "<group>"; };
-		857DDCED1F46F8EB00828758 /* ZWCommonTableCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableCtr.h; sourceTree = "<group>"; };
-		857DDCEE1F46F8EB00828758 /* ZWCommonTableCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableCtr.m; sourceTree = "<group>"; };
 		85A224FF1E45C49B00E15444 /* WeChatSettingCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatSettingCtr.h; sourceTree = "<group>"; };
 		85A225001E45C49B00E15444 /* WeChatSettingCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSettingCtr.m; sourceTree = "<group>"; };
 		85A225011E45C49B00E15444 /* WeChatSettingCtr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeChatSettingCtr.xib; sourceTree = "<group>"; };
+		85C1DAE31F66723800A0B2E0 /* ZWCommonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonConfig.h; sourceTree = "<group>"; };
+		85C1DAE41F66723800A0B2E0 /* ZWCommonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonConfig.m; sourceTree = "<group>"; };
+		85C1DAE51F66723800A0B2E0 /* ZWCommonTableCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableCtr.h; sourceTree = "<group>"; };
+		85C1DAE61F66723800A0B2E0 /* ZWCommonTableCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableCtr.m; sourceTree = "<group>"; };
+		85C1DAE71F66723800A0B2E0 /* ZWCommonTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableData.h; sourceTree = "<group>"; };
+		85C1DAE81F66723800A0B2E0 /* ZWCommonTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableData.m; sourceTree = "<group>"; };
+		85C1DAE91F66723800A0B2E0 /* ZWCommonTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableDelegate.h; sourceTree = "<group>"; };
+		85C1DAEA1F66723800A0B2E0 /* ZWCommonTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableDelegate.m; sourceTree = "<group>"; };
 		85D9FE561E334B4100D1E598 /* ZWCommonTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWCommonTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D9FE5A1E334B4100D1E598 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85D9FE5C1E334B4100D1E598 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,10 +113,6 @@
 		85D9FE6A1E334B4100D1E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85D9FE7C1E335B4B00D1E598 /* WeChatMineCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatMineCtr.h; sourceTree = "<group>"; };
 		85D9FE7D1E335B4B00D1E598 /* WeChatMineCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatMineCtr.m; sourceTree = "<group>"; };
-		85F5A2701E53EF4800B0A071 /* ZWCommonTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableData.h; sourceTree = "<group>"; };
-		85F5A2711E53EF4800B0A071 /* ZWCommonTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableData.m; sourceTree = "<group>"; };
-		85F5A2721E53EF4800B0A071 /* ZWCommonTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableDelegate.h; sourceTree = "<group>"; };
-		85F5A2731E53EF4800B0A071 /* ZWCommonTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableDelegate.m; sourceTree = "<group>"; };
 		85F5A2791E53EFC000B0A071 /* ZWCommonTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +201,21 @@
 			path = InputSubmit;
 			sourceTree = "<group>";
 		};
+		85C1DAE21F66723800A0B2E0 /* ZWCore */ = {
+			isa = PBXGroup;
+			children = (
+				85C1DAE31F66723800A0B2E0 /* ZWCommonConfig.h */,
+				85C1DAE41F66723800A0B2E0 /* ZWCommonConfig.m */,
+				85C1DAE51F66723800A0B2E0 /* ZWCommonTableCtr.h */,
+				85C1DAE61F66723800A0B2E0 /* ZWCommonTableCtr.m */,
+				85C1DAE71F66723800A0B2E0 /* ZWCommonTableData.h */,
+				85C1DAE81F66723800A0B2E0 /* ZWCommonTableData.m */,
+				85C1DAE91F66723800A0B2E0 /* ZWCommonTableDelegate.h */,
+				85C1DAEA1F66723800A0B2E0 /* ZWCommonTableDelegate.m */,
+			);
+			path = ZWCore;
+			sourceTree = "<group>";
+		};
 		85D9FE4D1E334B4100D1E598 = {
 			isa = PBXGroup;
 			children = (
@@ -272,18 +287,11 @@
 		85F5A2691E53EF4800B0A071 /* ZWCommonTable */ = {
 			isa = PBXGroup;
 			children = (
+				85C1DAE21F66723800A0B2E0 /* ZWCore */,
 				8524ACCB1F48374D004B2D17 /* Protocol */,
 				8546F8F91F45D69000373CBE /* ZWStaticCell */,
 				8546F8F81F45D67B00373CBE /* ZWStaticModel */,
 				85F5A2791E53EFC000B0A071 /* ZWCommonTable.h */,
-				85F5A2701E53EF4800B0A071 /* ZWCommonTableData.h */,
-				85F5A2711E53EF4800B0A071 /* ZWCommonTableData.m */,
-				85F5A2721E53EF4800B0A071 /* ZWCommonTableDelegate.h */,
-				85F5A2731E53EF4800B0A071 /* ZWCommonTableDelegate.m */,
-				857DDCED1F46F8EB00828758 /* ZWCommonTableCtr.h */,
-				857DDCEE1F46F8EB00828758 /* ZWCommonTableCtr.m */,
-				8524ACBC1F481D05004B2D17 /* ZWCommonConfig.h */,
-				8524ACBD1F481D05004B2D17 /* ZWCommonConfig.m */,
 			);
 			path = ZWCommonTable;
 			sourceTree = "<group>";
@@ -376,14 +384,14 @@
 				85A225021E45C49C00E15444 /* WeChatSettingCtr.m in Sources */,
 				8524ACB81F47DFC4004B2D17 /* UserInfoModel.m in Sources */,
 				8524ACBB1F47E07C004B2D17 /* InputSubmitViewModel.m in Sources */,
+				85C1DAEC1F66723800A0B2E0 /* ZWCommonTableCtr.m in Sources */,
 				857DDCD71F46D8D900828758 /* ZWStaticInputCell.m in Sources */,
 				8524ACC21F4827A8004B2D17 /* ZWStaticOptionCell.m in Sources */,
-				85F5A2771E53EF4800B0A071 /* ZWCommonTableData.m in Sources */,
-				857DDCEF1F46F8EB00828758 /* ZWCommonTableCtr.m in Sources */,
 				8524ACD61F486889004B2D17 /* ZWStaticTextViewModel.m in Sources */,
 				857DDCC91F46941300828758 /* ZWStaticSwitchCell.m in Sources */,
 				85D9FE7E1E335B4B00D1E598 /* WeChatMineCtr.m in Sources */,
-				8524ACBE1F481D05004B2D17 /* ZWCommonConfig.m in Sources */,
+				85C1DAEB1F66723800A0B2E0 /* ZWCommonConfig.m in Sources */,
+				85C1DAED1F66723800A0B2E0 /* ZWCommonTableData.m in Sources */,
 				8524ACCA1F482C05004B2D17 /* ZWStaticOptionModel.m in Sources */,
 				85D9FE611E334B4100D1E598 /* ViewController.m in Sources */,
 				857DDCEB1F46F59600828758 /* InputSubmitCtr.m in Sources */,
@@ -391,8 +399,8 @@
 				857DDCCD1F46942A00828758 /* ZWStaticSwitchModel.m in Sources */,
 				8524ACD21F48595A004B2D17 /* ZWStaticTextViewCell.m in Sources */,
 				854128071E4B2014006B4B78 /* WeChatInfoModel.m in Sources */,
+				85C1DAEE1F66723800A0B2E0 /* ZWCommonTableDelegate.m in Sources */,
 				85D9FE5B1E334B4100D1E598 /* main.m in Sources */,
-				85F5A2781E53EF4800B0A071 /* ZWCommonTableDelegate.m in Sources */,
 				85726B5D1E49723A00A6F78F /* CommonTableCtr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

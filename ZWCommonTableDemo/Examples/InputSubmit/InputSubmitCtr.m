@@ -53,11 +53,11 @@
     UIAlertController *alertCtr = [UIAlertController alertControllerWithTitle:@"性别选择" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *manSheet = [UIAlertAction actionWithTitle:@"男" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         weakSelf.viewModel.dynamicData.usex = @"男";
-        [weakSelf.mTable reloadData];
+        [weakSelf.mTable reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:2 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
     }];
     UIAlertAction *womenSheet = [UIAlertAction actionWithTitle:@"女" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         weakSelf.viewModel.dynamicData.usex = @"女";
-        [weakSelf.mTable reloadData];
+        [weakSelf.mTable reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:2 inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
     }];
     UIAlertAction *cancle = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         

@@ -24,7 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setData];
     [self setupTableView];
 }
 -(void)setupTableView{
@@ -37,13 +36,13 @@
     mTable.dataSource = self.tableAdapter;
     [self.view addSubview:mTable];
 }
--(void)setData{
+-(NSArray *)dataSourceArr{
     //custom cell info
     WeChatInfoModel *infoModel  = [[WeChatInfoModel alloc] init];
     infoModel.headerImage       = @"WechatIMG2";
     infoModel.name              = @"Kingzzz";
     infoModel.weChatName        = @"KingWeChat";
-    self.dataSourceArr = @[
+    NSArray *data = @[
                            @{
                                SectionHeaderHeight   :headerHeight,
                                SectionFooterHeight   :footerHeight,
@@ -106,7 +105,7 @@
                                        ]
                                },
                            ];
-    self.dataSourceArr = [ZWCommonTableSection sectionsWithData:self.dataSourceArr];
+    return [ZWCommonTableSection sectionsWithData:data];
 }
 -(ZWCommonTableDelegate *)tableAdapter{
     if (!_tableAdapter) {

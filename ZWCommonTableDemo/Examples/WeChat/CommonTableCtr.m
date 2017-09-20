@@ -11,10 +11,22 @@
 #import "WeChatInfoModel.h"
 #import "WeChatSettingCtr.h"
 @interface CommonTableCtr ()
-/** */
+/** 
+ *  adapter
+ */
 @property (nonatomic, strong) ZWCommonTableDelegate *comDelegate;
-/** */
+/** 
+ *  data
+ */
 @property (nonatomic, strong) NSArray *dataSourceArr;
+/** 
+ *  开启消息验证
+ */
+@property (nonatomic, assign) BOOL isInvateOn;
+/**
+ *  开启推荐
+ */
+@property (nonatomic, assign) BOOL isrecommendOn;
 @end
 
 @implementation CommonTableCtr
@@ -25,7 +37,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setData];
     [self setupTableView];
 }
 -(void)setupTableView{
@@ -42,7 +53,7 @@
     mTable.dataSource = _comDelegate;
     [self.view addSubview:mTable];
 }
--(void)setData{
+-(NSArray *)dataSourceArr{
     WeChatInfoModel *infoModel  = [[WeChatInfoModel alloc] init];
     infoModel.headerImage       = @"WechatIMG2";
     infoModel.name              = @"wang_ziwu";
@@ -51,11 +62,13 @@
     ZWStaticSwitchModel *msgValidModel = [[ZWStaticSwitchModel alloc] init];
     msgValidModel.title = @"消息验证";
     msgValidModel.actionSwitchName = @"actionSwitch:";
-
+    msgValidModel.isSwitchOn = self.isInvateOn;
+    
     ZWStaticSwitchModel *recommendModel = [[ZWStaticSwitchModel alloc] init];
     recommendModel.title = @"像我推荐通讯录朋友";
+    recommendModel.isSwitchOn = self.isrecommendOn;
     
-    self.dataSourceArr = @[
+    NSArray *array = @[
                            @{
                                SectionHeaderHeight   :headerHeight,
                                SectionFooterHeight   :footerHeight,
@@ -126,7 +139,7 @@
                                        ]
                                },
                            ];
-    self.dataSourceArr = [ZWCommonTableSection sectionsWithData:self.dataSourceArr];
+    return  [ZWCommonTableSection sectionsWithData:array];
 }
 -(void)actionToExampCtr{
     WeChatSettingCtr *setCtr = [[WeChatSettingCtr alloc] init];
@@ -149,6 +162,7 @@
     }else{
         alertMessage = @"close";
     }
+    self.isInvateOn = mSwitch.on;
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:alertMessage preferredStyle:UIAlertControllerStyleAlert];
     [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         

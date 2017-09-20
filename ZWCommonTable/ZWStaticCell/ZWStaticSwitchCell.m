@@ -55,6 +55,7 @@
 -(void)setCellModel:(ZWStaticSwitchModel *)cellModel{
     _cellModel = cellModel;
     self.zw_switchTextLab.text = cellModel.title;
+    [self.zw_mSwitch setOn:cellModel.isSwitchOn animated:YES];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

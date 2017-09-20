@@ -22,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self setData];
     [self setupTableView];
 }
 -(void)setupTableView{
@@ -33,8 +32,9 @@
     self.mTable.delegate = self.tableAdapter;
     self.mTable.dataSource = self.tableAdapter;
 }
--(void)setData{
-    self.dataSourceArr = @[
+
+- (NSArray *)dataSourceArr{
+    NSArray *data = @[
                            @{
                                SectionHeaderTitle    :@"",
                                SectionHeaderHeight   :headerHeight,
@@ -99,7 +99,7 @@
                                        ]
                                },
                            ];
-    self.dataSourceArr = [ZWCommonTableSection sectionsWithData:self.dataSourceArr];
+    return  [ZWCommonTableSection sectionsWithData:data];
 }
 -(void)actionExitLogin{
     [self.navigationController popViewControllerAnimated:YES];

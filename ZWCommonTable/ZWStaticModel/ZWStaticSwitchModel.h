@@ -9,8 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "ZWStaticModelProtocol.h"
 @interface ZWStaticSwitchModel : NSObject<ZWStaticModelProtocol>
-/** title*/
+/** 
+ *  title
+ */
 @property (nonatomic, copy) NSString *title;
-/** switch开关点击事件*/
+/** 
+ *  switch开关点击事件
+ */
 @property (nonatomic, copy) NSString *actionSwitchName;
+/**
+ *  switch On/Off
+ */
+@property (nonatomic, assign) BOOL isSwitchOn;
 @end
