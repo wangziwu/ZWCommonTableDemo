@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
 
 	s.subspec 'ZWCore' do |ss|
 		ss.source_files = 'ZWCommonTable/ZWCore/*.{h,m}'
+		ss.dependency 	'ZWCommonTable/Protocol'
 	end
 
 	s.subspec 'Protocol' do |ss|
@@ -24,6 +25,7 @@ Pod::Spec.new do |s|
 	s.subspec 'ZWStaticCell' do |ss|
 		ss.source_files = 'ZWCommonTable/ZWStaticCell/*.{h,m}'
 		ss.dependency 	'ZWCommonTable/Protocol'
+		ss.dependency 	'ZWCommonTable/ZWCore'
 	end
 
 	s.subspec 'ZWStaticModel' do |ss|
