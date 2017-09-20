@@ -10,23 +10,23 @@ Pod::Spec.new do |s|
 	s.source	= {:git => 'https://github.com/wangziwu/ZWCommonTableDemo.git',:tag => s.version }
 	s.requires_arc	= true
 
-	s.source_files	= 'ZWCommonTable/*.{h,m}'
+	s.source_files	= 'ZWCommonTable/**/*.{h,m}'
 	s.resources    	= 'ZWCommonTable/**/*.{png,xib,nib,bundle}'
 
 	s.subspec 'ZWCore' do |ss|
-		ss.source_files = 'ZWCommonTable/**/ZWCommon{Config,TableCtr,TableData,TableDelegate}.{h,m}'
+		# ss.source_files = 'ZWCommonTable/**/ZWCommon{Config,TableCtr,TableData,TableDelegate}.{h,m}'
 	end
 
 	s.subspec 'Protocol' do |ss|
-		ss.source_files = 'ZWCommonTable/**/ZW{CommonTableCellProtocol,StaticModelProtocol}.h'
+		# ss.source_files = 'ZWCommonTable/**/ZW{CommonTableCellProtocol,StaticModelProtocol}.h'
 	end
 
 	s.subspec 'ZWStaticCell' do |ss|
-		ss.source_files = 'ZWCommonTable/ZWStaticCell/*.{h,m}'
+		# ss.source_files = 'ZWCommonTable/ZWStaticCell/*.{h,m}'
 	end
 
 	s.subspec 'ZWStaticModel' do |ss|
-		ss.source_files = 'ZWCommonTable/ZWStaticModel/*.{h,m}'
+		# ss.source_files = 'ZWCommonTable/ZWStaticModel/*.{h,m}'
 	end
 	s.frameworks = 'UIKit'
 end	
