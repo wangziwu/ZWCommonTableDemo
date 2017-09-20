@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		8524ACB81F47DFC4004B2D17 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACB71F47DFC4004B2D17 /* UserInfoModel.m */; };
 		8524ACBB1F47E07C004B2D17 /* InputSubmitViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACBA1F47E07C004B2D17 /* InputSubmitViewModel.m */; };
-		8524ACC21F4827A8004B2D17 /* ZWStaticOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACC01F4827A8004B2D17 /* ZWStaticOptionCell.m */; };
-		8524ACC31F4827A8004B2D17 /* ZWStaticOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8524ACC11F4827A8004B2D17 /* ZWStaticOptionCell.xib */; };
-		8524ACCA1F482C05004B2D17 /* ZWStaticOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACC91F482C05004B2D17 /* ZWStaticOptionModel.m */; };
-		8524ACD21F48595A004B2D17 /* ZWStaticTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACD01F48595A004B2D17 /* ZWStaticTextViewCell.m */; };
-		8524ACD31F48595A004B2D17 /* ZWStaticTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8524ACD11F48595A004B2D17 /* ZWStaticTextViewCell.xib */; };
-		8524ACD61F486889004B2D17 /* ZWStaticTextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8524ACD51F486889004B2D17 /* ZWStaticTextViewModel.m */; };
 		854128071E4B2014006B4B78 /* WeChatInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 854128061E4B2014006B4B78 /* WeChatInfoModel.m */; };
-		8546F8FF1F45DA0000373CBE /* ZWStaticTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8546F8FE1F45DA0000373CBE /* ZWStaticTextCellModel.m */; };
+		8571843E1F7269BF00A3FCAF /* ZWCommonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571841C1F7269BF00A3FCAF /* ZWCommonConfig.m */; };
+		8571843F1F7269BF00A3FCAF /* ZWCommonTableCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571841E1F7269BF00A3FCAF /* ZWCommonTableCtr.m */; };
+		857184401F7269BF00A3FCAF /* ZWCommonTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 857184201F7269BF00A3FCAF /* ZWCommonTableData.m */; };
+		857184411F7269BF00A3FCAF /* ZWCommonTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 857184221F7269BF00A3FCAF /* ZWCommonTableDelegate.m */; };
+		857184421F7269BF00A3FCAF /* ZWStaticButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 857184251F7269BF00A3FCAF /* ZWStaticButtonCell.m */; };
+		857184431F7269BF00A3FCAF /* ZWStaticButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857184261F7269BF00A3FCAF /* ZWStaticButtonCell.xib */; };
+		857184441F7269BF00A3FCAF /* ZWStaticInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 857184281F7269BF00A3FCAF /* ZWStaticInputCell.m */; };
+		857184451F7269BF00A3FCAF /* ZWStaticInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857184291F7269BF00A3FCAF /* ZWStaticInputCell.xib */; };
+		857184461F7269BF00A3FCAF /* ZWStaticOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571842B1F7269BF00A3FCAF /* ZWStaticOptionCell.m */; };
+		857184471F7269BF00A3FCAF /* ZWStaticOptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8571842C1F7269BF00A3FCAF /* ZWStaticOptionCell.xib */; };
+		857184481F7269BF00A3FCAF /* ZWStaticSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571842E1F7269BF00A3FCAF /* ZWStaticSwitchCell.m */; };
+		857184491F7269BF00A3FCAF /* ZWStaticSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8571842F1F7269BF00A3FCAF /* ZWStaticSwitchCell.xib */; };
+		8571844A1F7269C000A3FCAF /* ZWStaticTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 857184311F7269BF00A3FCAF /* ZWStaticTextViewCell.m */; };
+		8571844B1F7269C000A3FCAF /* ZWStaticTextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857184321F7269BF00A3FCAF /* ZWStaticTextViewCell.xib */; };
+		8571844C1F7269C000A3FCAF /* ZWStaticInputModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857184351F7269BF00A3FCAF /* ZWStaticInputModel.m */; };
+		8571844D1F7269C000A3FCAF /* ZWStaticOptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857184371F7269BF00A3FCAF /* ZWStaticOptionModel.m */; };
+		8571844E1F7269C000A3FCAF /* ZWStaticSwitchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857184391F7269BF00A3FCAF /* ZWStaticSwitchModel.m */; };
+		8571844F1F7269C000A3FCAF /* ZWStaticTextCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571843B1F7269BF00A3FCAF /* ZWStaticTextCellModel.m */; };
+		857184501F7269C000A3FCAF /* ZWStaticTextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571843D1F7269BF00A3FCAF /* ZWStaticTextViewModel.m */; };
 		85726B5D1E49723A00A6F78F /* CommonTableCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 85726B5C1E49723A00A6F78F /* CommonTableCtr.m */; };
-		857DDCC91F46941300828758 /* ZWStaticSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCC71F46941300828758 /* ZWStaticSwitchCell.m */; };
-		857DDCCA1F46941300828758 /* ZWStaticSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857DDCC81F46941300828758 /* ZWStaticSwitchCell.xib */; };
-		857DDCCD1F46942A00828758 /* ZWStaticSwitchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCCC1F46942A00828758 /* ZWStaticSwitchModel.m */; };
-		857DDCD21F46C7C200828758 /* ZWStaticButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCD01F46C7C200828758 /* ZWStaticButtonCell.m */; };
-		857DDCD31F46C7C200828758 /* ZWStaticButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857DDCD11F46C7C200828758 /* ZWStaticButtonCell.xib */; };
-		857DDCD71F46D8D900828758 /* ZWStaticInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCD51F46D8D900828758 /* ZWStaticInputCell.m */; };
-		857DDCD81F46D8D900828758 /* ZWStaticInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857DDCD61F46D8D900828758 /* ZWStaticInputCell.xib */; };
-		857DDCDB1F46DEDB00828758 /* ZWStaticInputModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCDA1F46DEDB00828758 /* ZWStaticInputModel.m */; };
 		857DDCE31F46EFA800828758 /* CommonDetailImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCDE1F46EFA800828758 /* CommonDetailImageCell.m */; };
 		857DDCE41F46EFA800828758 /* CommonDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 857DDCDF1F46EFA800828758 /* CommonDetailImageCell.xib */; };
 		857DDCE51F46EFA800828758 /* WeChatMineInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCE11F46EFA800828758 /* WeChatMineInfoCell.m */; };
@@ -33,10 +37,6 @@
 		857DDCEB1F46F59600828758 /* InputSubmitCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 857DDCE91F46F59600828758 /* InputSubmitCtr.m */; };
 		85A225021E45C49C00E15444 /* WeChatSettingCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 85A225001E45C49B00E15444 /* WeChatSettingCtr.m */; };
 		85A225031E45C49C00E15444 /* WeChatSettingCtr.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85A225011E45C49B00E15444 /* WeChatSettingCtr.xib */; };
-		85C1DAEB1F66723800A0B2E0 /* ZWCommonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C1DAE41F66723800A0B2E0 /* ZWCommonConfig.m */; };
-		85C1DAEC1F66723800A0B2E0 /* ZWCommonTableCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C1DAE61F66723800A0B2E0 /* ZWCommonTableCtr.m */; };
-		85C1DAED1F66723800A0B2E0 /* ZWCommonTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C1DAE81F66723800A0B2E0 /* ZWCommonTableData.m */; };
-		85C1DAEE1F66723800A0B2E0 /* ZWCommonTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C1DAEA1F66723800A0B2E0 /* ZWCommonTableDelegate.m */; };
 		85D9FE5B1E334B4100D1E598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D9FE5A1E334B4100D1E598 /* main.m */; };
 		85D9FE5E1E334B4100D1E598 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D9FE5D1E334B4100D1E598 /* AppDelegate.m */; };
 		85D9FE611E334B4100D1E598 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D9FE601E334B4100D1E598 /* ViewController.m */; };
@@ -51,37 +51,46 @@
 		8524ACB71F47DFC4004B2D17 /* UserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
 		8524ACB91F47E07C004B2D17 /* InputSubmitViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSubmitViewModel.h; sourceTree = "<group>"; };
 		8524ACBA1F47E07C004B2D17 /* InputSubmitViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputSubmitViewModel.m; sourceTree = "<group>"; };
-		8524ACBF1F4827A8004B2D17 /* ZWStaticOptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticOptionCell.h; sourceTree = "<group>"; };
-		8524ACC01F4827A8004B2D17 /* ZWStaticOptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticOptionCell.m; sourceTree = "<group>"; };
-		8524ACC11F4827A8004B2D17 /* ZWStaticOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticOptionCell.xib; sourceTree = "<group>"; };
-		8524ACC81F482C05004B2D17 /* ZWStaticOptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticOptionModel.h; sourceTree = "<group>"; };
-		8524ACC91F482C05004B2D17 /* ZWStaticOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticOptionModel.m; sourceTree = "<group>"; };
-		8524ACCC1F483781004B2D17 /* ZWCommonTableCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableCellProtocol.h; sourceTree = "<group>"; };
-		8524ACCD1F483781004B2D17 /* ZWStaticModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticModelProtocol.h; sourceTree = "<group>"; };
-		8524ACCF1F48595A004B2D17 /* ZWStaticTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticTextViewCell.h; sourceTree = "<group>"; };
-		8524ACD01F48595A004B2D17 /* ZWStaticTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticTextViewCell.m; sourceTree = "<group>"; };
-		8524ACD11F48595A004B2D17 /* ZWStaticTextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticTextViewCell.xib; sourceTree = "<group>"; };
-		8524ACD41F486889004B2D17 /* ZWStaticTextViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticTextViewModel.h; sourceTree = "<group>"; };
-		8524ACD51F486889004B2D17 /* ZWStaticTextViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticTextViewModel.m; sourceTree = "<group>"; };
 		854128051E4B2014006B4B78 /* WeChatInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatInfoModel.h; sourceTree = "<group>"; };
 		854128061E4B2014006B4B78 /* WeChatInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatInfoModel.m; sourceTree = "<group>"; };
-		8546F8FD1F45DA0000373CBE /* ZWStaticTextCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticTextCellModel.h; sourceTree = "<group>"; };
-		8546F8FE1F45DA0000373CBE /* ZWStaticTextCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticTextCellModel.m; sourceTree = "<group>"; };
+		857184171F7269BF00A3FCAF /* ZWCommonTableCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableCellProtocol.h; sourceTree = "<group>"; };
+		857184181F7269BF00A3FCAF /* ZWStaticModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticModelProtocol.h; sourceTree = "<group>"; };
+		857184191F7269BF00A3FCAF /* ZWCommonTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTable.h; sourceTree = "<group>"; };
+		8571841B1F7269BF00A3FCAF /* ZWCommonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonConfig.h; sourceTree = "<group>"; };
+		8571841C1F7269BF00A3FCAF /* ZWCommonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonConfig.m; sourceTree = "<group>"; };
+		8571841D1F7269BF00A3FCAF /* ZWCommonTableCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableCtr.h; sourceTree = "<group>"; };
+		8571841E1F7269BF00A3FCAF /* ZWCommonTableCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableCtr.m; sourceTree = "<group>"; };
+		8571841F1F7269BF00A3FCAF /* ZWCommonTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableData.h; sourceTree = "<group>"; };
+		857184201F7269BF00A3FCAF /* ZWCommonTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableData.m; sourceTree = "<group>"; };
+		857184211F7269BF00A3FCAF /* ZWCommonTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableDelegate.h; sourceTree = "<group>"; };
+		857184221F7269BF00A3FCAF /* ZWCommonTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableDelegate.m; sourceTree = "<group>"; };
+		857184241F7269BF00A3FCAF /* ZWStaticButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticButtonCell.h; sourceTree = "<group>"; };
+		857184251F7269BF00A3FCAF /* ZWStaticButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticButtonCell.m; sourceTree = "<group>"; };
+		857184261F7269BF00A3FCAF /* ZWStaticButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticButtonCell.xib; sourceTree = "<group>"; };
+		857184271F7269BF00A3FCAF /* ZWStaticInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticInputCell.h; sourceTree = "<group>"; };
+		857184281F7269BF00A3FCAF /* ZWStaticInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticInputCell.m; sourceTree = "<group>"; };
+		857184291F7269BF00A3FCAF /* ZWStaticInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticInputCell.xib; sourceTree = "<group>"; };
+		8571842A1F7269BF00A3FCAF /* ZWStaticOptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticOptionCell.h; sourceTree = "<group>"; };
+		8571842B1F7269BF00A3FCAF /* ZWStaticOptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticOptionCell.m; sourceTree = "<group>"; };
+		8571842C1F7269BF00A3FCAF /* ZWStaticOptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticOptionCell.xib; sourceTree = "<group>"; };
+		8571842D1F7269BF00A3FCAF /* ZWStaticSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticSwitchCell.h; sourceTree = "<group>"; };
+		8571842E1F7269BF00A3FCAF /* ZWStaticSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticSwitchCell.m; sourceTree = "<group>"; };
+		8571842F1F7269BF00A3FCAF /* ZWStaticSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticSwitchCell.xib; sourceTree = "<group>"; };
+		857184301F7269BF00A3FCAF /* ZWStaticTextViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticTextViewCell.h; sourceTree = "<group>"; };
+		857184311F7269BF00A3FCAF /* ZWStaticTextViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticTextViewCell.m; sourceTree = "<group>"; };
+		857184321F7269BF00A3FCAF /* ZWStaticTextViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticTextViewCell.xib; sourceTree = "<group>"; };
+		857184341F7269BF00A3FCAF /* ZWStaticInputModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticInputModel.h; sourceTree = "<group>"; };
+		857184351F7269BF00A3FCAF /* ZWStaticInputModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticInputModel.m; sourceTree = "<group>"; };
+		857184361F7269BF00A3FCAF /* ZWStaticOptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticOptionModel.h; sourceTree = "<group>"; };
+		857184371F7269BF00A3FCAF /* ZWStaticOptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticOptionModel.m; sourceTree = "<group>"; };
+		857184381F7269BF00A3FCAF /* ZWStaticSwitchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticSwitchModel.h; sourceTree = "<group>"; };
+		857184391F7269BF00A3FCAF /* ZWStaticSwitchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticSwitchModel.m; sourceTree = "<group>"; };
+		8571843A1F7269BF00A3FCAF /* ZWStaticTextCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticTextCellModel.h; sourceTree = "<group>"; };
+		8571843B1F7269BF00A3FCAF /* ZWStaticTextCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticTextCellModel.m; sourceTree = "<group>"; };
+		8571843C1F7269BF00A3FCAF /* ZWStaticTextViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticTextViewModel.h; sourceTree = "<group>"; };
+		8571843D1F7269BF00A3FCAF /* ZWStaticTextViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticTextViewModel.m; sourceTree = "<group>"; };
 		85726B5B1E49723A00A6F78F /* CommonTableCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTableCtr.h; sourceTree = "<group>"; };
 		85726B5C1E49723A00A6F78F /* CommonTableCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTableCtr.m; sourceTree = "<group>"; };
-		857DDCC61F46941300828758 /* ZWStaticSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticSwitchCell.h; sourceTree = "<group>"; };
-		857DDCC71F46941300828758 /* ZWStaticSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticSwitchCell.m; sourceTree = "<group>"; };
-		857DDCC81F46941300828758 /* ZWStaticSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticSwitchCell.xib; sourceTree = "<group>"; };
-		857DDCCB1F46942A00828758 /* ZWStaticSwitchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticSwitchModel.h; sourceTree = "<group>"; };
-		857DDCCC1F46942A00828758 /* ZWStaticSwitchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticSwitchModel.m; sourceTree = "<group>"; };
-		857DDCCF1F46C7C200828758 /* ZWStaticButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticButtonCell.h; sourceTree = "<group>"; };
-		857DDCD01F46C7C200828758 /* ZWStaticButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticButtonCell.m; sourceTree = "<group>"; };
-		857DDCD11F46C7C200828758 /* ZWStaticButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticButtonCell.xib; sourceTree = "<group>"; };
-		857DDCD41F46D8D900828758 /* ZWStaticInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticInputCell.h; sourceTree = "<group>"; };
-		857DDCD51F46D8D900828758 /* ZWStaticInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticInputCell.m; sourceTree = "<group>"; };
-		857DDCD61F46D8D900828758 /* ZWStaticInputCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWStaticInputCell.xib; sourceTree = "<group>"; };
-		857DDCD91F46DEDB00828758 /* ZWStaticInputModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStaticInputModel.h; sourceTree = "<group>"; };
-		857DDCDA1F46DEDB00828758 /* ZWStaticInputModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStaticInputModel.m; sourceTree = "<group>"; };
 		857DDCDD1F46EFA800828758 /* CommonDetailImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDetailImageCell.h; sourceTree = "<group>"; };
 		857DDCDE1F46EFA800828758 /* CommonDetailImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonDetailImageCell.m; sourceTree = "<group>"; };
 		857DDCDF1F46EFA800828758 /* CommonDetailImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonDetailImageCell.xib; sourceTree = "<group>"; };
@@ -93,14 +102,6 @@
 		85A224FF1E45C49B00E15444 /* WeChatSettingCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatSettingCtr.h; sourceTree = "<group>"; };
 		85A225001E45C49B00E15444 /* WeChatSettingCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatSettingCtr.m; sourceTree = "<group>"; };
 		85A225011E45C49B00E15444 /* WeChatSettingCtr.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeChatSettingCtr.xib; sourceTree = "<group>"; };
-		85C1DAE31F66723800A0B2E0 /* ZWCommonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonConfig.h; sourceTree = "<group>"; };
-		85C1DAE41F66723800A0B2E0 /* ZWCommonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonConfig.m; sourceTree = "<group>"; };
-		85C1DAE51F66723800A0B2E0 /* ZWCommonTableCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableCtr.h; sourceTree = "<group>"; };
-		85C1DAE61F66723800A0B2E0 /* ZWCommonTableCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableCtr.m; sourceTree = "<group>"; };
-		85C1DAE71F66723800A0B2E0 /* ZWCommonTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableData.h; sourceTree = "<group>"; };
-		85C1DAE81F66723800A0B2E0 /* ZWCommonTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableData.m; sourceTree = "<group>"; };
-		85C1DAE91F66723800A0B2E0 /* ZWCommonTableDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTableDelegate.h; sourceTree = "<group>"; };
-		85C1DAEA1F66723800A0B2E0 /* ZWCommonTableDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWCommonTableDelegate.m; sourceTree = "<group>"; };
 		85D9FE561E334B4100D1E598 /* ZWCommonTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWCommonTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D9FE5A1E334B4100D1E598 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85D9FE5C1E334B4100D1E598 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,7 +114,6 @@
 		85D9FE6A1E334B4100D1E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85D9FE7C1E335B4B00D1E598 /* WeChatMineCtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatMineCtr.h; sourceTree = "<group>"; };
 		85D9FE7D1E335B4B00D1E598 /* WeChatMineCtr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatMineCtr.m; sourceTree = "<group>"; };
-		85F5A2791E53EFC000B0A071 /* ZWCommonTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWCommonTable.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,52 +127,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8524ACCB1F48374D004B2D17 /* Protocol */ = {
+		857184151F7269BF00A3FCAF /* ZWCommonTable */ = {
 			isa = PBXGroup;
 			children = (
-				8524ACCC1F483781004B2D17 /* ZWCommonTableCellProtocol.h */,
-				8524ACCD1F483781004B2D17 /* ZWStaticModelProtocol.h */,
+				857184161F7269BF00A3FCAF /* Protocol */,
+				857184191F7269BF00A3FCAF /* ZWCommonTable.h */,
+				8571841A1F7269BF00A3FCAF /* ZWCore */,
+				857184231F7269BF00A3FCAF /* ZWStaticCell */,
+				857184331F7269BF00A3FCAF /* ZWStaticModel */,
+			);
+			path = ZWCommonTable;
+			sourceTree = "<group>";
+		};
+		857184161F7269BF00A3FCAF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				857184171F7269BF00A3FCAF /* ZWCommonTableCellProtocol.h */,
+				857184181F7269BF00A3FCAF /* ZWStaticModelProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		8546F8F81F45D67B00373CBE /* ZWStaticModel */ = {
+		8571841A1F7269BF00A3FCAF /* ZWCore */ = {
 			isa = PBXGroup;
 			children = (
-				8546F8FD1F45DA0000373CBE /* ZWStaticTextCellModel.h */,
-				8546F8FE1F45DA0000373CBE /* ZWStaticTextCellModel.m */,
-				857DDCCB1F46942A00828758 /* ZWStaticSwitchModel.h */,
-				857DDCCC1F46942A00828758 /* ZWStaticSwitchModel.m */,
-				857DDCD91F46DEDB00828758 /* ZWStaticInputModel.h */,
-				857DDCDA1F46DEDB00828758 /* ZWStaticInputModel.m */,
-				8524ACC81F482C05004B2D17 /* ZWStaticOptionModel.h */,
-				8524ACC91F482C05004B2D17 /* ZWStaticOptionModel.m */,
-				8524ACD41F486889004B2D17 /* ZWStaticTextViewModel.h */,
-				8524ACD51F486889004B2D17 /* ZWStaticTextViewModel.m */,
+				8571841B1F7269BF00A3FCAF /* ZWCommonConfig.h */,
+				8571841C1F7269BF00A3FCAF /* ZWCommonConfig.m */,
+				8571841D1F7269BF00A3FCAF /* ZWCommonTableCtr.h */,
+				8571841E1F7269BF00A3FCAF /* ZWCommonTableCtr.m */,
+				8571841F1F7269BF00A3FCAF /* ZWCommonTableData.h */,
+				857184201F7269BF00A3FCAF /* ZWCommonTableData.m */,
+				857184211F7269BF00A3FCAF /* ZWCommonTableDelegate.h */,
+				857184221F7269BF00A3FCAF /* ZWCommonTableDelegate.m */,
 			);
-			path = ZWStaticModel;
+			path = ZWCore;
 			sourceTree = "<group>";
 		};
-		8546F8F91F45D69000373CBE /* ZWStaticCell */ = {
+		857184231F7269BF00A3FCAF /* ZWStaticCell */ = {
 			isa = PBXGroup;
 			children = (
-				857DDCC61F46941300828758 /* ZWStaticSwitchCell.h */,
-				857DDCC71F46941300828758 /* ZWStaticSwitchCell.m */,
-				857DDCC81F46941300828758 /* ZWStaticSwitchCell.xib */,
-				857DDCCF1F46C7C200828758 /* ZWStaticButtonCell.h */,
-				857DDCD01F46C7C200828758 /* ZWStaticButtonCell.m */,
-				857DDCD11F46C7C200828758 /* ZWStaticButtonCell.xib */,
-				857DDCD41F46D8D900828758 /* ZWStaticInputCell.h */,
-				857DDCD51F46D8D900828758 /* ZWStaticInputCell.m */,
-				857DDCD61F46D8D900828758 /* ZWStaticInputCell.xib */,
-				8524ACBF1F4827A8004B2D17 /* ZWStaticOptionCell.h */,
-				8524ACC01F4827A8004B2D17 /* ZWStaticOptionCell.m */,
-				8524ACC11F4827A8004B2D17 /* ZWStaticOptionCell.xib */,
-				8524ACCF1F48595A004B2D17 /* ZWStaticTextViewCell.h */,
-				8524ACD01F48595A004B2D17 /* ZWStaticTextViewCell.m */,
-				8524ACD11F48595A004B2D17 /* ZWStaticTextViewCell.xib */,
+				857184241F7269BF00A3FCAF /* ZWStaticButtonCell.h */,
+				857184251F7269BF00A3FCAF /* ZWStaticButtonCell.m */,
+				857184261F7269BF00A3FCAF /* ZWStaticButtonCell.xib */,
+				857184271F7269BF00A3FCAF /* ZWStaticInputCell.h */,
+				857184281F7269BF00A3FCAF /* ZWStaticInputCell.m */,
+				857184291F7269BF00A3FCAF /* ZWStaticInputCell.xib */,
+				8571842A1F7269BF00A3FCAF /* ZWStaticOptionCell.h */,
+				8571842B1F7269BF00A3FCAF /* ZWStaticOptionCell.m */,
+				8571842C1F7269BF00A3FCAF /* ZWStaticOptionCell.xib */,
+				8571842D1F7269BF00A3FCAF /* ZWStaticSwitchCell.h */,
+				8571842E1F7269BF00A3FCAF /* ZWStaticSwitchCell.m */,
+				8571842F1F7269BF00A3FCAF /* ZWStaticSwitchCell.xib */,
+				857184301F7269BF00A3FCAF /* ZWStaticTextViewCell.h */,
+				857184311F7269BF00A3FCAF /* ZWStaticTextViewCell.m */,
+				857184321F7269BF00A3FCAF /* ZWStaticTextViewCell.xib */,
 			);
 			path = ZWStaticCell;
+			sourceTree = "<group>";
+		};
+		857184331F7269BF00A3FCAF /* ZWStaticModel */ = {
+			isa = PBXGroup;
+			children = (
+				857184341F7269BF00A3FCAF /* ZWStaticInputModel.h */,
+				857184351F7269BF00A3FCAF /* ZWStaticInputModel.m */,
+				857184361F7269BF00A3FCAF /* ZWStaticOptionModel.h */,
+				857184371F7269BF00A3FCAF /* ZWStaticOptionModel.m */,
+				857184381F7269BF00A3FCAF /* ZWStaticSwitchModel.h */,
+				857184391F7269BF00A3FCAF /* ZWStaticSwitchModel.m */,
+				8571843A1F7269BF00A3FCAF /* ZWStaticTextCellModel.h */,
+				8571843B1F7269BF00A3FCAF /* ZWStaticTextCellModel.m */,
+				8571843C1F7269BF00A3FCAF /* ZWStaticTextViewModel.h */,
+				8571843D1F7269BF00A3FCAF /* ZWStaticTextViewModel.m */,
+			);
+			path = ZWStaticModel;
 			sourceTree = "<group>";
 		};
 		857DDCDC1F46EFA800828758 /* View */ = {
@@ -201,25 +228,10 @@
 			path = InputSubmit;
 			sourceTree = "<group>";
 		};
-		85C1DAE21F66723800A0B2E0 /* ZWCore */ = {
-			isa = PBXGroup;
-			children = (
-				85C1DAE31F66723800A0B2E0 /* ZWCommonConfig.h */,
-				85C1DAE41F66723800A0B2E0 /* ZWCommonConfig.m */,
-				85C1DAE51F66723800A0B2E0 /* ZWCommonTableCtr.h */,
-				85C1DAE61F66723800A0B2E0 /* ZWCommonTableCtr.m */,
-				85C1DAE71F66723800A0B2E0 /* ZWCommonTableData.h */,
-				85C1DAE81F66723800A0B2E0 /* ZWCommonTableData.m */,
-				85C1DAE91F66723800A0B2E0 /* ZWCommonTableDelegate.h */,
-				85C1DAEA1F66723800A0B2E0 /* ZWCommonTableDelegate.m */,
-			);
-			path = ZWCore;
-			sourceTree = "<group>";
-		};
 		85D9FE4D1E334B4100D1E598 = {
 			isa = PBXGroup;
 			children = (
-				85F5A2691E53EF4800B0A071 /* ZWCommonTable */,
+				857184151F7269BF00A3FCAF /* ZWCommonTable */,
 				85D9FE581E334B4100D1E598 /* ZWCommonTableDemo */,
 				85D9FE571E334B4100D1E598 /* Products */,
 			);
@@ -284,18 +296,6 @@
 			path = WeChat;
 			sourceTree = "<group>";
 		};
-		85F5A2691E53EF4800B0A071 /* ZWCommonTable */ = {
-			isa = PBXGroup;
-			children = (
-				85C1DAE21F66723800A0B2E0 /* ZWCore */,
-				8524ACCB1F48374D004B2D17 /* Protocol */,
-				8546F8F91F45D69000373CBE /* ZWStaticCell */,
-				8546F8F81F45D67B00373CBE /* ZWStaticModel */,
-				85F5A2791E53EFC000B0A071 /* ZWCommonTable.h */,
-			);
-			path = ZWCommonTable;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,17 +355,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857DDCCA1F46941300828758 /* ZWStaticSwitchCell.xib in Resources */,
 				857DDCE61F46EFA800828758 /* WeChatMineInfoCell.xib in Resources */,
 				857DDCE41F46EFA800828758 /* CommonDetailImageCell.xib in Resources */,
-				857DDCD31F46C7C200828758 /* ZWStaticButtonCell.xib in Resources */,
-				857DDCD81F46D8D900828758 /* ZWStaticInputCell.xib in Resources */,
+				857184471F7269BF00A3FCAF /* ZWStaticOptionCell.xib in Resources */,
 				85D9FE691E334B4100D1E598 /* LaunchScreen.storyboard in Resources */,
+				857184491F7269BF00A3FCAF /* ZWStaticSwitchCell.xib in Resources */,
+				857184431F7269BF00A3FCAF /* ZWStaticButtonCell.xib in Resources */,
 				85D9FE661E334B4100D1E598 /* Assets.xcassets in Resources */,
-				8524ACC31F4827A8004B2D17 /* ZWStaticOptionCell.xib in Resources */,
 				85A225031E45C49C00E15444 /* WeChatSettingCtr.xib in Resources */,
-				8524ACD31F48595A004B2D17 /* ZWStaticTextViewCell.xib in Resources */,
 				85D9FE641E334B4100D1E598 /* Main.storyboard in Resources */,
+				8571844B1F7269C000A3FCAF /* ZWStaticTextViewCell.xib in Resources */,
+				857184451F7269BF00A3FCAF /* ZWStaticInputCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,32 +376,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857DDCDB1F46DEDB00828758 /* ZWStaticInputModel.m in Sources */,
-				857DDCD21F46C7C200828758 /* ZWStaticButtonCell.m in Sources */,
 				857DDCE31F46EFA800828758 /* CommonDetailImageCell.m in Sources */,
-				8546F8FF1F45DA0000373CBE /* ZWStaticTextCellModel.m in Sources */,
 				857DDCE51F46EFA800828758 /* WeChatMineInfoCell.m in Sources */,
+				857184481F7269BF00A3FCAF /* ZWStaticSwitchCell.m in Sources */,
 				85A225021E45C49C00E15444 /* WeChatSettingCtr.m in Sources */,
+				8571844E1F7269C000A3FCAF /* ZWStaticSwitchModel.m in Sources */,
 				8524ACB81F47DFC4004B2D17 /* UserInfoModel.m in Sources */,
 				8524ACBB1F47E07C004B2D17 /* InputSubmitViewModel.m in Sources */,
-				85C1DAEC1F66723800A0B2E0 /* ZWCommonTableCtr.m in Sources */,
-				857DDCD71F46D8D900828758 /* ZWStaticInputCell.m in Sources */,
-				8524ACC21F4827A8004B2D17 /* ZWStaticOptionCell.m in Sources */,
-				8524ACD61F486889004B2D17 /* ZWStaticTextViewModel.m in Sources */,
-				857DDCC91F46941300828758 /* ZWStaticSwitchCell.m in Sources */,
+				857184441F7269BF00A3FCAF /* ZWStaticInputCell.m in Sources */,
+				8571844A1F7269C000A3FCAF /* ZWStaticTextViewCell.m in Sources */,
+				857184401F7269BF00A3FCAF /* ZWCommonTableData.m in Sources */,
+				8571844D1F7269C000A3FCAF /* ZWStaticOptionModel.m in Sources */,
+				857184461F7269BF00A3FCAF /* ZWStaticOptionCell.m in Sources */,
+				857184501F7269C000A3FCAF /* ZWStaticTextViewModel.m in Sources */,
 				85D9FE7E1E335B4B00D1E598 /* WeChatMineCtr.m in Sources */,
-				85C1DAEB1F66723800A0B2E0 /* ZWCommonConfig.m in Sources */,
-				85C1DAED1F66723800A0B2E0 /* ZWCommonTableData.m in Sources */,
-				8524ACCA1F482C05004B2D17 /* ZWStaticOptionModel.m in Sources */,
+				8571844C1F7269C000A3FCAF /* ZWStaticInputModel.m in Sources */,
+				8571843F1F7269BF00A3FCAF /* ZWCommonTableCtr.m in Sources */,
 				85D9FE611E334B4100D1E598 /* ViewController.m in Sources */,
+				8571843E1F7269BF00A3FCAF /* ZWCommonConfig.m in Sources */,
+				857184421F7269BF00A3FCAF /* ZWStaticButtonCell.m in Sources */,
+				8571844F1F7269C000A3FCAF /* ZWStaticTextCellModel.m in Sources */,
 				857DDCEB1F46F59600828758 /* InputSubmitCtr.m in Sources */,
 				85D9FE5E1E334B4100D1E598 /* AppDelegate.m in Sources */,
-				857DDCCD1F46942A00828758 /* ZWStaticSwitchModel.m in Sources */,
-				8524ACD21F48595A004B2D17 /* ZWStaticTextViewCell.m in Sources */,
 				854128071E4B2014006B4B78 /* WeChatInfoModel.m in Sources */,
-				85C1DAEE1F66723800A0B2E0 /* ZWCommonTableDelegate.m in Sources */,
 				85D9FE5B1E334B4100D1E598 /* main.m in Sources */,
 				85726B5D1E49723A00A6F78F /* CommonTableCtr.m in Sources */,
+				857184411F7269BF00A3FCAF /* ZWCommonTableDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
