@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 	s.platform	= :ios,'8.0'
 	s.ios.deployment_target = '8.0'
 	s.source	= {:git => 'https://github.com/wangziwu/ZWCommonTableDemo.git',:tag => s.version}
-	s.source_files	= 'ZWCommonTable/ZWCommonTable.h'
+	s.source_files	= 'ZWCommonTable/ZWCommonTable.{h,m}'
 	s.resources    	= 'ZWCommonTable/ZWStaticCell/*.{png,xib,nib,bundle}'
 	s.requires_arc	= true
 
