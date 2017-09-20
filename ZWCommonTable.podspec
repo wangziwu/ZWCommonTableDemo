@@ -17,16 +17,16 @@ Pod::Spec.new do |s|
 		ss.source_files = 'ZWCommonTable/ZWCore/ZWCommon{Config,TableCtr,TableData,TableDelegate}.{h,m}'
 	end
 
-	s.subspec 'Protocol' do |ss|
-		# ss.source_files = 'ZWCommonTable/**/ZW{CommonTableCellProtocol,StaticModelProtocol}.h'
-	end
+	# s.subspec 'Protocol' do |ss|
+	# 	# ss.source_files = 'ZWCommonTable/**/ZW{CommonTableCellProtocol,StaticModelProtocol}.h'
+	# end
 
-	s.subspec 'ZWStaticCell' do |ss|
-		# ss.source_files = 'ZWCommonTable/ZWStaticCell/*.{h,m}'
-	end
+	# s.subspec 'ZWStaticCell' do |ss|
+	# 	# ss.source_files = 'ZWCommonTable/ZWStaticCell/*.{h,m}'
+	# end
 
-	s.subspec 'ZWStaticModel' do |ss|
-		# ss.source_files = 'ZWCommonTable/ZWStaticModel/*.{h,m}'
-	end
+	# s.subspec 'ZWStaticModel' do |ss|
+	# 	# ss.source_files = 'ZWCommonTable/ZWStaticModel/*.{h,m}'
+	# end
 	s.frameworks = 'UIKit'
 end	
