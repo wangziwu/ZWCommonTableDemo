@@ -8,23 +8,25 @@ Pod::Spec.new do |s|
 	s.platform	= :ios,'8.0'
 	s.ios.deployment_target = '8.0'
 	s.source	= {:git => 'https://github.com/wangziwu/ZWCommonTableDemo.git',:tag => s.version,:submodules => true }
-	s.source_files	= 'ZWCommonTable/ZWCommonTable.h'
-	s.resources    	= 'ZWCommonTable/**/*.{png,xib,nib,bundle}'
 	s.requires_arc	= true
 
-	s.subspec 	'ZWCore' do |ss|
-		ss.source_files = 'ZWCore/*.{h,m}'
+	s.source_files	= 'ZWCommonTable/ZWCommonTable.h'
+	s.public_header_files = 'ZWCommonTable/ZWCommonTable.h'
+	# s.resources    	= 'ZWCommonTable/**/*.{png,xib,nib,bundle}'
+
+	s.subspec 'ZWCore' do |ss|
+		ss.source_files = 'ZWCommonTable/ZWCore/*.{h,m}'
 	end
 
-	s.subspec	'Protocol' do |ss|
-		ss.source_files = 'Protocol/*.{h,m}'
+	s.subspec 'Protocol' do |ss|
+		ss.source_files = 'ZWCommonTable/Protocol/*.{h,m}'
 	end
 
-	s.subspec	'ZWStaticCell' do |ss|
-		ss.source_files = 'ZWStaticCell/*.{h,m}'
+	s.subspec 'ZWStaticCell' do |ss|
+		ss.source_files = 'ZWCommonTable/ZWStaticCell/*.{h,m}'
 	end
 
-	s.subspec	'ZWStaticModel' do |ss|
-		ss.source_files = 'ZWStaticModel/*.{h,m}'
+	s.subspec 'ZWStaticModel' do |ss|
+		ss.source_files = 'ZWCommonTable/ZWStaticModel/*.{h,m}'
 	end
 end	
