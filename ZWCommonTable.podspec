@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 	s.source	= {:git => 'https://github.com/wangziwu/ZWCommonTableDemo.git',:tag => s.version }
 	s.requires_arc	= true
 
-	s.source_files	= 'ZWCommonTable/**/*.{h,m}'
+	s.source_files	= 'ZWCommonTable/ZWCommonTable.h'
 	s.resources    	= 'ZWCommonTable/**/*.{png,xib,nib,bundle}'
 
 	s.subspec 'ZWCore' do |ss|
