@@ -7,7 +7,7 @@
 //
 
 #import "ZWCommonTableCtr.h"
-#import "ZWCommonTable.h"
+#import "ZWCommonTableDelegate.h"
 @interface ZWCommonTableCtr ()
 @property (nonatomic, strong) ZWCommonTableDelegate *tableAdapter;
 /** static Data*/
