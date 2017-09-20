@@ -13,18 +13,18 @@ Pod::Spec.new do |s|
 	s.requires_arc	= true
 
 	s.subspec 	'ZWCore' do |ss|
-		ss.source_files = 'ZWCommonTable/ZWCore/*.{h,m}'
+		ss.source_files = 'ZWCore/*.{h,m}'
 	end
 
 	s.subspec	'Protocol' do |ss|
-		ss.source_files = 'ZWCommonTable/Protocol/*.{h,m}'
+		ss.source_files = 'Protocol/*.{h,m}'
 	end
 
 	s.subspec	'ZWStaticCell' do |ss|
-		ss.source_files = 'ZWCommonTable/ZWStaticCell/*.{h,m}'
+		ss.source_files = 'ZWStaticCell/*.{h,m}'
 	end
 
 	s.subspec	'ZWStaticModel' do |ss|
-		ss.source_files = 'ZWCommonTable/ZWStaticModel/*.{h,m}'
+		ss.source_files = 'ZWStaticModel/*.{h,m}'
 	end
 end	
