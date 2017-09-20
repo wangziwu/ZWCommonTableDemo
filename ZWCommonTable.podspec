@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name		= 'ZWCommonTable'
-	s.version	= '1.0.2'
+	s.version	= '1.0.3'
 	s.summary	= '更简洁、快速的实现静态TableView页面、JSON式写法让你随意增、删、改静态cell.'
 	s.homepage 	= 'https://github.com/wangziwu/ZWCommonTableDemo'
 	s.license	= 'MIT'
