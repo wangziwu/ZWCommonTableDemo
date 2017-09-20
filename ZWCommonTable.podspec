@@ -7,11 +7,10 @@ Pod::Spec.new do |s|
 	s.authors	= {'wangziwu'	=>	'wang_ziwu@126.com'}
 	s.platform	= :ios,'8.0'
 	s.ios.deployment_target = '8.0'
-	s.source	= {:git => 'https://github.com/wangziwu/ZWCommonTableDemo.git',:tag => s.version,:submodules => true }
+	s.source	= {:git => 'https://github.com/wangziwu/ZWCommonTableDemo.git',:tag => s.version }
 	s.requires_arc	= true
 
 	s.source_files	= 'ZWCommonTable/**/*.{h,m}'
-	s.public_header_files = 'ZWCommonTable/ZWCommonTable.h'
 	s.resources    	= 'ZWCommonTable/**/*.{png,xib,nib,bundle}'
 
 	# s.subspec 'ZWCore' do |ss|
