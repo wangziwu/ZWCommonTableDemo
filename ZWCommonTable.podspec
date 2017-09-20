@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
 	# s.resources    	= 'ZWCommonTable/**/*.{png,xib,nib,bundle}'
 
 	s.subspec 'ZWCore' do |ss|
-		ss.source_files = 'ZWCommonTable/ZWCore/*.{h,m}'
+		ss.source_files = 'ZWCommonTable/ZWCore/ZWCommon{Config,TableCtr,TableData,TableDelegate}.{h,m}'
 	end
 
 	s.subspec 'Protocol' do |ss|
-		ss.source_files = 'ZWCommonTable/Protocol/*.{h,m}'
+		ss.source_files = 'ZWCommonTable/Protocol/ZW{CommonTableCellProtocol,StaticModelProtocol}.h'
 	end
 
 	s.subspec 'ZWStaticCell' do |ss|
@@ -29,4 +29,5 @@ Pod::Spec.new do |s|
 	s.subspec 'ZWStaticModel' do |ss|
 		ss.source_files = 'ZWCommonTable/ZWStaticModel/*.{h,m}'
 	end
+	s.frameworks = 'UIKit'
 end	
