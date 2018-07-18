@@ -120,10 +120,12 @@
                                SectionFooterHeight   :@"50",
                                SectionRows           :@[
                                        @{
-                                           CellExtraInfo        :msgValidModel
+                                           CellExtraInfo        :msgValidModel,
+                                           IsForbidSelect       :@(YES)
                                            },
                                        @{
-                                           CellExtraInfo        :recommendModel
+                                           CellExtraInfo        :recommendModel,
+                                           IsForbidSelect       :@(YES)
                                            }
                                        ]
                                },

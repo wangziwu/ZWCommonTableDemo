@@ -95,6 +95,11 @@
     }
     //isHiddenAccessory (>)
     cell.accessoryType = cellRows.isHiddenAccessory?UITableViewCellAccessoryNone:UITableViewCellAccessoryDisclosureIndicator;
+    if (cellRows.isForbidSelect) {
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }else {
+        cell.selectionStyle = UITableViewCellSelectionStyleDefault;
+    }
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -137,7 +142,9 @@
     [superVc.navigationController pushViewController:vc animated:YES];
 }
 - (void)refreshCellData:(ZWCommonTableRow *)cellRows cell:(UITableViewCell *)cell{
-    cell.imageView.image = [UIImage imageNamed:cellRows.cellImageName];
+    if (cellRows.cellImageName&&cellRows.cellImageName.length) {
+        cell.imageView.image = [UIImage imageNamed:cellRows.cellImageName];
+    }
     cell.textLabel.text = cellRows.cellTitle;
     cell.textLabel.font = [UIFont systemFontOfSize:cellRows.cellTitleFont];
     cell.detailTextLabel.text = cellRows.cellDetailTitle;

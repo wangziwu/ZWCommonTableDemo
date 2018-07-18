@@ -33,7 +33,7 @@
 #define IsHiddenCell            @"isHiddenCell"
 #define IsHiddenAccessory       @"isHiddenAccessory"
 #define IsForbidSelect          @"isForbidSelect"
-
+#define IsHiddenSections        @"isHiddenSections"
 @interface ZWCommonTableRow : NSObject
 /** 
  *  默认title
@@ -115,6 +115,11 @@
  *  sectionRows集合
  */
 @property (nonatomic, strong) NSArray<ZWCommonTableRow *> *tableRows;
+/**
+ *  是否隐藏section中所有cell
+ *  默认：NO
+ */
+@property (nonatomic, assign) BOOL isHiddenSections;
 
 - (instancetype)initWithDic:(NSDictionary *)secDict;
 + (NSArray *)sectionsWithData:(NSArray *)sectionsArr;

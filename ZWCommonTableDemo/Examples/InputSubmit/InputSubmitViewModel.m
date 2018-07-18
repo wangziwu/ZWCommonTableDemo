@@ -46,10 +46,12 @@
                            SectionHeaderHeight :@"10",
                            SectionRows        :@[
                                    @{
-                                       CellExtraInfo    :nameItem
+                                       CellExtraInfo    :nameItem,
+                                       IsForbidSelect   :@(YES)
                                        },
                                    @{
-                                       CellExtraInfo    :phoneItem
+                                       CellExtraInfo    :phoneItem,
+                                       IsForbidSelect   :@(YES)
                                        },
                                    @{
                                        CellActionSelName:@"actionSelectSex",
@@ -62,7 +64,8 @@
                            SectionRows         :@[
                                    @{
                                        CellRowHeight    :@"80",
-                                       CellExtraInfo    :addressItem
+                                       CellExtraInfo    :addressItem,
+                                       IsForbidSelect   :@(YES)
                                        }
                                    ]
                            }

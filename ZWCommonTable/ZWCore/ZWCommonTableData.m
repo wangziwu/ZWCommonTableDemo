@@ -54,6 +54,7 @@
         _footerTitle    = secDict[SectionFooterTitle];
         _headerHeight   = [secDict[SectionHeaderHeight] floatValue];
         _footerHeight   = [secDict[SectionFooterHeight] floatValue];
+        _isHiddenSections = [secDict[IsHiddenSections] boolValue];
         _tableRows      = [ZWCommonTableRow rowsWithData:secDict[SectionRows]];
     }
     return self;
@@ -62,7 +63,7 @@
     NSMutableArray *array = [NSMutableArray array];
     for (NSDictionary *dict in sectionsArr) {
         ZWCommonTableSection *sectionModel = [[ZWCommonTableSection alloc] initWithDic:dict];
-        if (sectionModel)[array addObject:sectionModel];
+        if (sectionModel&&!sectionModel.isHiddenSections)[array addObject:sectionModel];
     }
     return array;
 }

@@ -61,11 +61,12 @@
                                            },
                                        @{
                                            CellTitle           :@"隐私",
-                                           CellPushVcClassName :@"BYMyLiveCtr"
+                                           CellPushVcClassName :@"",
+                                           IsForbidSelect      :@(YES)
                                            },
                                        @{
                                            CellTitle           :@"通用",
-                                           CellPushVcClassName :@"YLTDepartMgCtr"
+                                           CellPushVcClassName :@""
                                            }
                                        ]
                                },
